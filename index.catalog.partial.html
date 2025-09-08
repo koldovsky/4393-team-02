@@ -1,0 +1,53 @@
+<!-- Start Yankovych Maksym -->
+<section class="catalog" id="catalog">
+  <div class="catalog__container">
+    <header class="catalog__header">
+      <h2 class="catalog__title">All Items</h2>
+
+      <p class="catalog__subtitle">Discover What Everyone’s Falling in Love With</p>
+
+      <div class="catalog__divider">
+        <svg class="catalog__divider-svg" xmlns="http://www.w3.org/2000/svg" width="3000px" height="33" style="width:5%">
+          <path d="M0 16.5 L3000 16.5" style="fill:none;stroke:#b07f4c;stroke-width:3px"></path>
+        </svg>
+      </div>
+
+      <p class="catalog__description"> Explore our full collection of handpicked decor — made to elevate every corner of your home.</p>
+    </header>
+
+    <div class="catalog__content">
+      <aside data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="catalog.filters.partial.html"></aside>
+
+      <section class="catalog__products products">
+        <div class="products__applied applied-filters">
+          <div class="applied-filters__item">
+            <span class="applied-filters__label">Price: </span>
+            <span class="applied-filters__value">9,66 - 185,00</span>
+            <div class="applied-filters__close">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="applied-filters__close-icon">
+                <path d="M9.85 9.15C10.05 9.35 10.05 9.65 9.85 9.85C9.75 9.95 9.65 10 9.5 10C9.35 10 9.25 9.95 9.15 9.85L6 6.7L2.85 9.85C2.65 10.05 2.35 10.05 2.15 9.85C2.05 9.75 2 9.65 2 9.5C2 9.35 2.05 9.25 2.15 9.15L5.3 6L2.15 2.85C1.95 2.65 1.95 2.35 2.15 2.15C2.35 1.95 2.65 1.95 2.85 2.15L6 5.3L9.15 2.15C9.35 1.95 9.65 1.95 9.85 2.15C10.05 2.35 10.05 2.65 9.85 2.85L6.7 6L9.85 9.15Z" fill="currentColor"></path>
+              </svg>
+            </div>
+          </div>
+
+          <p class="applied-filters__clear">Clear all</p>
+        </div>
+
+        <div class="products__list">
+          <article data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="catalog.product.partial.html"></article>
+
+          <article data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="catalog.product.partial.html"></article>
+
+          <article data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="catalog.product.partial.html"></article>
+        </div>
+
+        <div class="products__more">
+          <a href="#" class="products__more-btn">
+            <span class="products__more-text">Load More</span>
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
+<!-- End Yankovych Maksym -->
