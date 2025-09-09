@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Zen+Kaku+Gothic+New&display=swap');
+
+.our-team__general-header {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    color: rgb(58, 58, 58);
+    font-size: 52px;
+}
+
+.our-team__visibility-button {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 26px;
+}
+
+.our-team__member-header {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 26px;
+    color: rgb(121, 45, 45);
+}
+
+.our-team__position {
+    font-family: "IBM Plex Sans", sans-serif;
+    color: rgb(133, 133, 133)
+}
+
+.our-team__email {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 15px;
+    color: rgb(133, 133, 133)
+}
+
+.our-team__description {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 17px;
+    color: rgb(133, 133, 133)
+}
+
+.our-team__more {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 14px;
+    color: rgb(181, 181, 181);
+}
