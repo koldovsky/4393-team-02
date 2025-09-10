@@ -1,0 +1,240 @@
+.catalog {
+    width: 100%;
+    padding: 120px 0;
+    background-color: #2b2b2b;
+}
+
+.catalog__container {
+    width: 100%;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.catalog__header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.catalog__title {
+    font-size: 11px;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    background-color: rgb(59, 59, 59);
+    font-family: "IBM Plex Sans Regular";
+}
+
+.catalog__subtitle {
+    font-size: 52px;
+    color: rgb(255, 255, 255);
+    font-family: "Zen Kaku Gothic New Medium";
+}
+
+.catalog__divider {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.catalog__description {
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    font-family: "IBM Plex Sans Medium";
+}
+
+.catalog__content {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.filters {
+    width: 100%;
+    max-width: 22.6%;
+}
+
+.filters__toggle {
+    width: 100%;
+    display: none;
+}
+
+.filters__toggle-inner {
+    gap: 0 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.filters__toggle-icon {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+}
+
+.filters__toggle-text {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-family: "IBM Plex Sans Medium";
+}
+
+.filters__panel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.filters__title {
+    margin-bottom: 24px;
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+    font-family: "Zen Kaku Gothic New Medium";
+}
+
+.filters__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.filters__section {
+    width: 100%;
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgb(255, 255, 255, 0.2);
+}
+
+.filters__header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filters__header-text {
+    font-size: 21px;
+    color: rgb(255, 255, 255);
+    font-family: "IBM Plex Sans Regular";
+}
+
+.filters__header-icon {
+    width: 24px;
+    height: 24px;
+    transform: rotate(-180deg);
+}
+
+.filters__header-icon path {
+    fill: rgb(255, 255, 255);
+}
+
+.filters__content {
+    width: 100%;
+    margin-top: 16px;
+}
+
+.filters__list {
+    list-style: none;
+}
+
+.filters__item {
+    margin-top: 16px;
+}
+
+.filters__item:nth-child(1) {
+    margin-top: 0;
+}
+
+.filters__label {
+    width: 100%;
+    display: flex;
+}
+
+.filters__input--radio {
+    opacity: 0;
+    position: absolute;
+}
+
+.filters__input--checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.filters__label-text {
+    position: relative;
+    gap: 0 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    font-family: "IBM Plex Sans Regular";
+    transition: 0.2s ease;
+}
+
+.filters__input--radio:checked + .filters__label-text {
+    font-family: "IBM Plex Sans Bold";
+}
+
+.filters__input--checkbox + .filters__label-text::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: flex;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.filters__input--checkbox:checked + .filters__label-text::before {
+    background-color: rgb(176, 127, 76);
+    border: 1px solid rgb(176, 127, 76);
+}
+
+.filters__input--checkbox:checked + .filters__label-text::after {
+    content: "";
+    width: 10px;
+    height: 6px;
+    position: absolute;
+    top: 6.5px;
+    left: 3.5px;
+    transform: rotate(135deg);
+    border-top: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(255, 255, 255);
+}
+
+.filters__slider {
+    width: 100%;
+    height: 4px;
+    accent-color: rgb(176, 127, 76);
+    background-color: rgb(255, 255, 255);
+}
+
+.filters__values {
+    width: 100%;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.filters__value {
+    width: 96px;
+    padding: 15px 17px;
+    background-color: rgba(255, 255, 255, 0.24);
+    text-align: center;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    font-family: "IBM Plex Sans Regular";
+}
