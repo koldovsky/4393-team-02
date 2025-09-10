@@ -238,3 +238,176 @@
     color: rgb(255, 255, 255);
     font-family: "IBM Plex Sans Regular";
 }
+
+.products {
+    max-width: calc(100% - 22.6% - 30px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.products__applied {
+    width: 100%;
+    gap: 0 8px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+}
+
+.products__list {
+    width: 100%;
+    gap: 30px 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.applied-filters__item {
+    padding: 4px 8px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.applied-filters__label {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-family: "IBM Plex Sans Medium";
+}
+
+.applied-filters__value {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-family: "IBM Plex Sans Medium";
+}
+
+.applied-filters__close {
+    cursor: pointer;
+    margin-left: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+}
+
+.applied-filters__close-icon {
+    filter: invert(1);
+}
+
+.applied-filters__clear {
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    font-family: "IBM Plex Sans Medium";
+}
+
+.product {
+    width: 100%;
+    gap: 24px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.product__link {
+    width: 100%;
+    gap: 20px 0;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.product__media {
+    width: 100%;
+    height: 270px;
+    position: relative;
+}
+
+.product__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product__badge {
+    position: absolute;
+    top: 8px;
+    left: 4px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: rgb(70, 76, 92);
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-family: "IBM Plex Sans SemiBold";
+}
+
+.product__title {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: "IBM Plex Sans Regular";
+}
+
+.product__price {
+    width: 100%;
+    gap: 16px 0;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product__price-old {
+    text-decoration: line-through;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-family: "IBM Plex Sans Regular";
+}
+
+.product__price-new {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-family: "IBM Plex Sans Regular";
+}
+
+.product__button {
+    width: 110px;
+    cursor: pointer;
+    padding: 19px 21px;
+    font-size: 14px;
+    line-height: 16.8px;
+    transition: 0.2s ease-in;
+    color: rgb(255, 255, 255);
+    font-family: "IBM Plex Sans SemiBold";
+    background-color: rgb(176, 127, 76);
+    border: 1px solid rgb(176, 127, 76);
+}
+
+.product__button:hover {
+    color: rgb(43, 43, 43);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.products__more-btn {
+    width: 120px;
+    margin-top: 40px;
+    padding: 19px 21px;
+    font-size: 14px;
+    line-height: 16.8px;
+    transition: 0.2s ease-in;
+    color: rgb(255, 255, 255);
+    font-family: "IBM Plex Sans SemiBold";
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.products__more-btn:hover {
+    cursor: pointer;
+    color: rgb(43, 43, 43);
+    background-color: rgb(255, 255, 255);
+}
