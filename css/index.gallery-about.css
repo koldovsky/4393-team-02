@@ -1,0 +1,47 @@
+.gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.gallery__text {
+  text-align: center;
+  font-family: "Zen Kaku Gothic New Regular", sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 40px; 
+  }
+
+    @media (min-width: 768px) {
+    .gallery__text {
+        font-size: 45px;
+    }
+    }
+
+    @media (min-width: 1024px) {
+    .gallery__text {
+        font-size: 52px;
+    }
+    }
+
+
+.gallery__figure--collage {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* ліва частина більша */
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.gallery__item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.gallery__item--large {
+  grid-row: span 2;
+}
+
+
