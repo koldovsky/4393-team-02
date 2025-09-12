@@ -1,0 +1,19 @@
+:root{
+    --color-background: #ffffff;
+    --color-heading: rgb(132, 120, 104);
+}
+
+.inspiration{
+    background-color: var(--color-background);
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #3a3a3a;
+    .inspiration__title{
+        display: inline-block;
+        text-align: center;
+        color: var(--color-heading);
+        background-color: #f3f3f3;
+        text-transform: uppercase;
+        font-family: 'Zen Kaku Gothic New', sans-serif;
+    }
+}
+

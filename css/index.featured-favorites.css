@@ -2,16 +2,123 @@ h2 {
     font-size: 11px;
     color: #858585;
     text-align: center;
+    font-family: sans-serif;
 }
 
 .featured-favorites_second_title {
     font-size: 52px;
     color: #3a3a3a;
     text-align: center;
+    font-family: sans-serif;
 }
 
 .featured-favorites_divider {
     stroke: width 3px;
     line-height: 27.2px;
     text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.featured-favorites_description {
+    font-size: 19px;
+    color: #858585;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.featured-favorites__carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.featured-favorites__item {
+    flex: 0 0 auto;
+    /* don’t shrink */
+    width: 200px;
+    /* smaller width for each card */
+    text-align: center;
+    /* center content */
+}
+
+.featured-favorites__item-span{
+    font-family: sans-serif;
+    font-size: 14px;
+    background-color: #464c5c;
+    color: #FFFF;
+}
+
+.featured-favorites__item_image {
+    width: 100%;
+    /* image fits inside article */
+    height: auto;
+    /* keeps aspect ratio */
+    max-height: 150px;
+    /* limits image height */
+    object-fit: contain;
+    /* ensures image doesn’t stretch */
+}
+
+.featured-favorites__item-title {
+    font-family: sans-serif;
+    font-size: 21px;
+    color: #3a3a3a;
+    font-weight: lighter;
+}
+
+.featured-favorites__price {
+    font-family: sans-serif;
+    font-size: 21px;
+    color: #B07F4C
+}
+
+.featured-favorites__price-old {
+    font-family: sans-serif;
+    font-size: 21px;
+    color: #B07F4C;
+    text-decoration: line-through;
+}
+
+.featured-favorites__button {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #FFFF;
+    background-color: #B07F4C;
+    text-decoration: none;
+}
+
+.featured-favorites__button:hover {
+    background-color: #2B2B2B;
+}
+
+.featured-favorites__stats {
+    background-color: #3a3a3a;
+}
+
+.featured-favorites__stats-text {
+    color: #FFFFFFC2;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+.featured-favorites__stats-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.featured-favorites__stats-value {
+    font-size: 52px;
+    color: #FFFF;
+    font-family: sans-serif;
+}
+
+.featured-favorites__stats-item {
+    flex: 1;
+    min-width: 200px;
 }
