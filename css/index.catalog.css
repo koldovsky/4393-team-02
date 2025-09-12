@@ -76,6 +76,7 @@
 
         .catalog__container {
             padding: 0 40px;
+            max-width: 1200px;
         }
 
         .catalog__subtitle {
@@ -337,6 +338,15 @@
             grid-template-columns: repeat(2, 1fr);
         }
     }
+
+    @media (min-width: 992px) {
+        width: 100%;
+        max-width: calc(100% - 22.6% - 30px);
+
+        .products__list {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
 }
 
 .applied-filters {
@@ -386,6 +396,23 @@
         color: rgb(255, 255, 255);
         background-color: transparent;
         font-family: "IBM Plex Sans Medium", sans-serif;
+    }
+
+    @media (min-width: 992px) {
+        .applied-filters__label {
+            font-size: 15px;
+            line-height: 25.5px;
+        }
+
+        .applied-filters__value {
+            font-size: 15px;
+            line-height: 25.5px;
+        }
+
+        .applied-filters__clear {
+            font-size: 15px;
+            line-height: 25.5px;
+        }
     }
 }
 
@@ -491,6 +518,23 @@
         .product__price-new {
             font-size: 19px;
             line-height: 26.6px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .product__title {
+            font-size: 20px;
+            line-height: 29.4px;
+        }
+
+        .product__price-old {
+            font-size: 16px;
+            line-height: 29.4px;
+        }
+
+        .product__price-new {
+            font-size: 16px;
+            line-height: 29.4px;
         }
     }
 }
