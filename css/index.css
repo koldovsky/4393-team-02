@@ -4,5 +4,9 @@
 @import "index.header-nav.css";
 @import "index.gallery-about.css";
 @import "index.about-us.css";
+<<<<<<< HEAD
+@import "index.benefits.css";
+=======
 @import "index.featured-favorites.css";
 @import "index.style-inspiration.css";
+>>>>>>> ce347b70791560132ee0f26d95b6e5d8364a4652
