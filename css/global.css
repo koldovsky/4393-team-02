@@ -1,7 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Zen+Kaku+Gothic+New&display=swap');
+
 *,
 *::after,
 *::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+@font-face {
+    font-weight: 300;
+    font-family: "IBM Plex Sans Light";
+    src: url("../fonts/IBM_Plex_Sans/static/IBMPlexSans-Light.ttf");
+}
+
+@font-face {
+    font-weight: 400;
+    font-family: "IBM Plex Sans Regular";
+    src: url("../fonts/IBM_Plex_Sans/static/IBMPlexSans-Regular.ttf");
+}
+
+@font-face {
+    font-weight: 500;
+    font-family: "IBM Plex Sans Medium";
+    src: url("../fonts/IBM_Plex_Sans/static/IBMPlexSans-Medium.ttf");
+}
+
+@font-face {
+    font-weight: 600;
+    font-family: "IBM Plex Sans SemiBold";
+    src: url("../fonts/IBM_Plex_Sans/static/IBMPlexSans-SemiBold.ttf");
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: "IBM Plex Sans Bold";
+    src: url("../fonts/IBM_Plex_Sans/static/IBMPlexSans-Bold.ttf");
+}
+
+@font-face {
+    font-weight: 300;
+    font-family: "Zen Kaku Gothic New Light";
+    src: url("../fonts/Zen_Kaku_Gothic_New/ZenKakuGothicNew-Light.ttf");
+}
+
+@font-face {
+    font-weight: 400;
+    font-family: "Zen Kaku Gothic New Regular";
+    src: url("../fonts/Zen_Kaku_Gothic_New/ZenKakuGothicNew-Regular.ttf");
+}
+
+@font-face {
+    font-weight: 500;
+    font-family: "Zen Kaku Gothic New Medium";
+    src: url("../fonts/Zen_Kaku_Gothic_New/ZenKakuGothicNew-Medium.ttf");
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: "Zen Kaku Gothic New Bold";
+    src: url("../fonts/Zen_Kaku_Gothic_New/ZenKakuGothicNew-Bold.ttf");
 }

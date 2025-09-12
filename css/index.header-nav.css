@@ -1,0 +1,227 @@
+/* ===== HEADER NAV ===== */
+.header__nav {
+  width: 100%;
+  padding: 30px 0px 90px;
+  display: flex;
+  justify-content: center;
+}
+
+.header-line {
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+/* ===== LOGO ===== */
+.header__logo-text {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-family: "Zen Kaku Gothic New",sans-serif;
+  gap: 2px;
+}
+.header__logo-link {
+  text-decoration: none; 
+}
+
+.header__logo-part--brand {
+  color: #b07f4c;
+}
+
+.header__logo-part--dark {
+  color: #2b2b2b;
+}
+
+/* ===== MENU ===== */
+.header__menu {
+  display: flex;
+  gap: 30px;
+  font-family: "IBM Plex Sans";
+}
+
+.header__menu-item {
+  list-style: none;
+}
+
+.header__menu-link {
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #2b2b2b;
+  transition: color 0.3s ease;
+}
+
+.header__menu-link:hover {
+  color: #b07f4c;
+}
+
+/* ===== SOCIAL ICONS ===== */
+.header__social-list {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
+.header__social-link {
+  display: inline-flex;
+  color: #2b2b2b;
+  transition: color 0.3s ease;
+}
+
+.header__social-link:hover {
+  color: #b07f4c;
+}
+
+.logo_2gS {
+  fill: currentColor;
+}
+
+/* ===== BURGER MENU (для мобільних) ===== */
+.burger-menu {
+  display: none;
+}
+
+.header__burger-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.header__burger-line {
+  width: 25px;
+  height: 3px;
+  background-color: #2b2b2b;
+}
+
+/* ===== HERO BANNER ===== */
+.header__section-banner {
+  text-align: center;
+
+}
+
+.header__section-banner-title {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #858585;
+  background-color: #f3f3f3;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: "IBM Plex Sans";
+}
+
+.header__section-banner-subtitle {
+  font-size: 75px;
+  font-weight: 600;
+  color: #2b2b2b;
+
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+
+.header__section-banner-text {
+  font-size: 19px;
+  color: #555;
+  margin-bottom: 30px;
+  font-family: "IBM Plex Sans";
+}
+
+/* ===== BACKGROUND IMAGE ===== */
+.header {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0px 40px 375px;
+  background: url("../img/header/header__background-image\ .png") no-repeat center center/cover;
+  color: #2b2b2b;
+  position: relative;
+}
+/* ===== BUTTONS ===== */
+.header__section-banner-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: "IBM Plex Sans";
+}
+
+.header__section-banner-link {
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.header__section-banner-link--primary {
+  background-color: #b07f4c;
+  color: #fff;
+}
+
+.header__section-banner-link--primary:hover {
+  background-color: #915d2d;
+}
+
+.header__section-banner-link--secondary {
+  border: 1px solid #2b2b2b;
+  color: #2b2b2b;
+  background: transparent;
+}
+
+.header__section-banner-link--secondary:hover {
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 992px) {
+  .header__menu {
+    display: none; 
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .header__menu.active {
+    display: flex;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .header__socials {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .header__section-banner-subtitle {
+    font-size: 32px;
+  }
+
+  .header__section-banner-text {
+    font-size: 16px;
+  }
+
+  .header__section-banner-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

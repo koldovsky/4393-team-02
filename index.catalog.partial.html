@@ -18,13 +18,13 @@
     <div class="catalog__content">
       <aside class="catalog__filters filters">
         <div class="filters__toggle">
-          <div type="button" class="filters__toggle-inner">
+          <button type="button" class="filters__toggle-inner">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="filters__toggle-icon">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M6 7.75V8C6 8.55228 6.44772 9 7 9C7.55228 9 8 8.55228 8 8V7.75V6.75V6C8 5.44772 7.55228 5 7 5C6.44772 5 6 5.44772 6 6V6.75V7.75ZM5 6C5 4.89543 5.89543 4 7 4C8.10457 4 9 4.89543 9 6V6.75H10H20.5C20.7761 6.75 21 6.97386 21 7.25C21 7.52614 20.7761 7.75 20.5 7.75H10H9V8C9 9.10457 8.10457 10 7 10C5.89543 10 5 9.10457 5 8V7.75H4H3.5C3.22386 7.75 3 7.52614 3 7.25C3 6.97386 3.22386 6.75 3.5 6.75H4H5V6ZM16 12.75V13C16 13.5523 16.4477 14 17 14C17.5523 14 18 13.5523 18 13V12.75V11.75V11C18 10.4477 17.5523 10 17 10C16.4477 10 16 10.4477 16 11V11.75V12.75ZM15 11C15 9.89543 15.8954 9 17 9C18.1046 9 19 9.89543 19 11V11.75H20H20.5C20.7761 11.75 21 11.9739 21 12.25C21 12.5261 20.7761 12.75 20.5 12.75H20H19V13C19 14.1046 18.1046 15 17 15C15.8954 15 15 14.1046 15 13V12.75H14H3.5C3.22386 12.75 3 12.5261 3 12.25C3 11.9739 3.22386 11.75 3.5 11.75H14H15V11ZM8 18V17.75V16.75V16C8 15.4477 8.44772 15 9 15C9.55228 15 10 15.4477 10 16V16.75V17.75V18C10 18.5523 9.55228 19 9 19C8.44772 19 8 18.5523 8 18ZM9 14C7.89543 14 7 14.8954 7 16V16.75H6H3.5C3.22386 16.75 3 16.9739 3 17.25C3 17.5261 3.22386 17.75 3.5 17.75H6H7V18C7 19.1046 7.89543 20 9 20C10.1046 20 11 19.1046 11 18V17.75H12H20.5C20.7761 17.75 21 17.5261 21 17.25C21 16.9739 20.7761 16.75 20.5 16.75H12H11V16C11 14.8954 10.1046 14 9 14Z" fill="currentColor"></path>
             </svg>
 
             <span class="filters__toggle-text">Filters</span>
-          </div>
+          </button>
         </div>
 
         <div class="filters__panel">
@@ -45,7 +45,7 @@
                 <ul class="filters__list">
                   <li class="filters__item">
                     <label class="filters__label" for="category-all">
-                      <input type="radio" class="filters__input filters__input--radio" id="category-all" name="category" value="all">
+                      <input type="radio" class="filters__input filters__input--radio" id="category-all" name="category" value="all" checked>
                       <span class="filters__label-text">All</span>
                     </label>
                   </li>
@@ -265,12 +265,12 @@
         <div class="products__applied applied-filters">
           <div class="applied-filters__item">
             <span class="applied-filters__label">Price: </span>
-            <span class="applied-filters__value">9,66 - 185,00</span>
-            <div class="applied-filters__close">
+            <span class="applied-filters__value">&nbsp;9,66 - 185,00</span>
+            <button class="applied-filters__close">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="applied-filters__close-icon">
                 <path d="M9.85 9.15C10.05 9.35 10.05 9.65 9.85 9.85C9.75 9.95 9.65 10 9.5 10C9.35 10 9.25 9.95 9.15 9.85L6 6.7L2.85 9.85C2.65 10.05 2.35 10.05 2.15 9.85C2.05 9.75 2 9.65 2 9.5C2 9.35 2.05 9.25 2.15 9.15L5.3 6L2.15 2.85C1.95 2.65 1.95 2.35 2.15 2.15C2.35 1.95 2.65 1.95 2.85 2.15L6 5.3L9.15 2.15C9.35 1.95 9.65 1.95 9.85 2.15C10.05 2.35 10.05 2.65 9.85 2.85L6.7 6L9.85 9.15Z" fill="currentColor"></path>
               </svg>
-            </div>
+            </button>
           </div>
 
           <button class="applied-filters__clear">Clear all</button>
@@ -280,60 +280,119 @@
           <article class="products__item product">
             <a href="#" class="product__link">
               <div class="product__media">
-                <img src="" alt="Tufted Geometric Rug" class="product__img">
+                <img src="./img/catalog/tufted-geometric-rug.png" alt="Tufted Geometric Rug" class="product__img">
                 <span class="product__badge">Bestseller</span>
               </div>
 
               <h4 class="product__title">Tufted Geometric Rug</h4>
 
-              <p class="product__price">$185,00 USD</p>
+              <div class="product__price">
+                <p class="product__price-old">$185,00 USD</p>
+
+                <p class="product__price-new">$150,00 USD</p>
+              </div>
             </a>
 
-            <div class="product__action">
-              <a href="#" class="product__btn">Buy Now</a>
-            </div>
+            <button class="product__button">Buy Now</button>
           </article>
 
           <article class="products__item product">
             <a href="#" class="product__link">
               <div class="product__media">
-                <img src="" alt="Tufted Geometric Rug" class="product__img">
+                <img src="./img/catalog/tufted-geometric-rug.png" alt="Tufted Geometric Rug" class="product__img">
                 <span class="product__badge">Bestseller</span>
               </div>
 
               <h4 class="product__title">Tufted Geometric Rug</h4>
 
-              <p class="product__price">$185,00 USD</p>
+              <div class="product__price">
+                <p class="product__price-old">$185,00 USD</p>
+
+                <p class="product__price-new">$150,00 USD</p>
+              </div>
             </a>
 
-            <div class="product__action">
-              <a href="#" class="product__btn">Buy Now</a>
-            </div>
+            <button class="product__button">Buy Now</button>
           </article>
 
           <article class="products__item product">
             <a href="#" class="product__link">
               <div class="product__media">
-                <img src="" alt="Tufted Geometric Rug" class="product__img">
+                <img src="./img/catalog/tufted-geometric-rug.png" alt="Tufted Geometric Rug" class="product__img">
                 <span class="product__badge">Bestseller</span>
               </div>
 
               <h4 class="product__title">Tufted Geometric Rug</h4>
 
-              <p class="product__price">$185,00 USD</p>
+              <div class="product__price">
+                <p class="product__price-old">$185,00 USD</p>
+
+                <p class="product__price-new">$150,00 USD</p>
+              </div>
             </a>
 
-            <div class="product__action">
-              <a href="#" class="product__btn">Buy Now</a>
-            </div>
+            <button class="product__button">Buy Now</button>
+          </article>
+
+          <article class="products__item product">
+            <a href="#" class="product__link">
+              <div class="product__media">
+                <img src="./img/catalog/tufted-geometric-rug.png" alt="Tufted Geometric Rug" class="product__img">
+                <span class="product__badge">Bestseller</span>
+              </div>
+
+              <h4 class="product__title">Tufted Geometric Rug</h4>
+
+              <div class="product__price">
+                <p class="product__price-old">$185,00 USD</p>
+
+                <p class="product__price-new">$150,00 USD</p>
+              </div>
+            </a>
+
+            <button class="product__button">Buy Now</button>
+          </article>
+
+          <article class="products__item product">
+            <a href="#" class="product__link">
+              <div class="product__media">
+                <img src="./img/catalog/tufted-geometric-rug.png" alt="Tufted Geometric Rug" class="product__img">
+                <span class="product__badge">Bestseller</span>
+              </div>
+
+              <h4 class="product__title">Tufted Geometric Rug</h4>
+
+              <div class="product__price">
+                <p class="product__price-old">$185,00 USD</p>
+
+                <p class="product__price-new">$150,00 USD</p>
+              </div>
+            </a>
+
+            <button class="product__button">Buy Now</button>
+          </article>
+
+          <article class="products__item product">
+            <a href="#" class="product__link">
+              <div class="product__media">
+                <img src="./img/catalog/tufted-geometric-rug.png" alt="Tufted Geometric Rug" class="product__img">
+                <span class="product__badge">Bestseller</span>
+              </div>
+
+              <h4 class="product__title">Tufted Geometric Rug</h4>
+
+              <div class="product__price">
+                <p class="product__price-old">$185,00 USD</p>
+
+                <p class="product__price-new">$150,00 USD</p>
+              </div>
+            </a>
+
+            <button class="product__button">Buy Now</button>
           </article>
         </div>
 
-        <div class="products__more">
-          <a href="#" class="products__more-btn">
-            <span class="products__more-text">Load More</span>
-          </a>
-        </div>
+        <button class="products__more-btn">Load More</button>
       </section>
     </div>
   </div>
