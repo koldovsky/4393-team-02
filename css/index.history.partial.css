@@ -1,0 +1,97 @@
+/* Загальний стиль секції */
+
+.history-section {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.history-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.history-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+
+/* Картки */
+
+.history-item {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.history-item img {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+}
+
+.history-text {
+    padding: 20px;
+}
+
+.history-text h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.history-text p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.history-text a {
+    color: #a67c52;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.history-text a:hover {
+    text-decoration: underline;
+}
+
+
+/* Кнопки внизу */
+
+.history-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.history-buttons button {
+    padding: 10px 20px;
+    border: 1px solid #333;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.history-buttons button:nth-child(2) {
+    background: #a67c52;
+    color: white;
+    border: none;
+}
+
+.history-buttons button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
