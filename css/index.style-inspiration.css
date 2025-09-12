@@ -1,19 +1,55 @@
 :root{
     --color-background: #ffffff;
     --color-heading: rgb(132, 120, 104);
+    --color-text: #3a3a3a;
 }
 
 .inspiration{
     background-color: var(--color-background);
     font-family: 'IBM Plex Sans', sans-serif;
     color: #3a3a3a;
+    text-align: center;
+    padding-top: 120px;
+    }
+
     .inspiration__title{
         display: inline-block;
-        text-align: center;
-        color: var(--color-heading);
+        color: #847868;
         background-color: #f3f3f3;
         text-transform: uppercase;
-        font-family: 'Zen Kaku Gothic New', sans-serif;
-    }
+         font-family: 'IBM Plex Sans Light', sans-serif;
+         font-size: 11px;
+         letter-spacing: 3px;
 }
+
+ .inspiration__text--subtitle{
+    margin-top: 20px;
+    font-size: 52px;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    color: var(--color-text);
+    font-weight: bold;
+ }
+
+  .inspiration__text--description{
+    font-size: 19px;
+    font-family: 'IBM Plex Sans Medium', sans-serif;
+    color: #858585;
+ }
+
+ .inspiration__list{
+    max-width: 100%;
+    margin-top: 50px;
+    display: grid;  
+    gap: 5px;
+
+     @media (max-width: 480px){
+    grid-template-columns: 1fr 1fr;
+ }
+
+   @media (max-width: 992px){
+    grid-template-columns: repeat(3, 1fr);
+ }  
+ }
+ 
+
 
