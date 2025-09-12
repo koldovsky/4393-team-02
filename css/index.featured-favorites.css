@@ -1,0 +1,17 @@
+h2 {
+    font-size: 11px;
+    color: #858585;
+    text-align: center;
+}
+
+.featured-favorites_second_title {
+    font-size: 52px;
+    color: #3a3a3a;
+    text-align: center;
+}
+
+.featured-favorites_divider {
+    stroke: width 3px;
+    line-height: 27.2px;
+    text-align: center;
+}
