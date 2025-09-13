@@ -1,152 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Decor</title>
-    <link
-      rel="shortcut icon"
-      href="img/global/deco4you-icon.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="css/index.css">
-    <script
-      src="https://unpkg.com/htmx.org@1.9.10"
-      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <!-- Start Feshchenko Bogdan -->
-    <header class="header">
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="global.header-nav.partial.html"
-      ></section>
-    </header>
-    <!-- Start Feshchenko Bogdan -->
-    <main class="main">
-      <!-- Start Viktoria Sikorska -->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.history.partial.html"
-      ></section>
-      <!-- End Viktoria Sikorska -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Decor</title>
+  <link rel="shortcut icon" href="img/global/deco4you-icon.png" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="https://unpkg.com/htmx.org@1.9.10"
+    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+    crossorigin="anonymous"></script>
+</head>
 
-      <!-- Start Rezunenko Oleksandr  -->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.about-us.partial.html"
-      ></section>
-      <!-- End Rezunenko Oleksandr  -->
-      <!-- Start Andrii Komiakov -->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.types.partial.html"
-      ></section>
-      <!-- End Andrii Komiakov -->
-      <!-- Start Roman Lashkevych -->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.style-inspiration.partial.html"
-      ></section>
-      <!-- End Roman Lashkevych -->
-      <!-- Start Oleh Sinkovskyi -->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.discount.partial.html"
-      ></section>
-      <!-- End Oleh Sinkovskyi -->
-      <!-- Start Oleksandr Tsupko -->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.our-team.partial.html"
-      ></section>
-      <!-- End Oleksandr Tsupko -->
-      <!-- Start Maria Radionova -->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.quote.partial.html"
-      ></section>
-      <!-- End Radionova Maria -->
-      <!-- Start Alina Kovryha -->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.benefits.partial.html"
-      ></section>
-      <!-- End Alina Kovryha -->
-      <!--Start Osypenko Iryna-->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.latest-news.partial.html"
-      ></section>
-      <!--End Osypenko Iryna-->
-      <!-- Start Artur Peretiatko-->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.gallery-about.partial.html"
-      ></section>
-      <!-- End Artur Peretiatko-->
-      <!-- Start Nerush Illya -->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.call-to-action.partial.html"
-      ></section>
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.faq.partial.html"
-      ></section>
-      <!-- End Nerush Illya -->
-      <!-- Start Krichfalushi Liana -->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.sale-now-on.partial.html"
-      ></section>
-      <!-- End Krichfalushi Liana -->
-      <!-- Start Vakulenko Veronika -->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.featured-favorites.partial.html"
-      ></section>
-      <!-- End Vakulenko Veronika -->
-      <!-- Start Yankovych Maksym -->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.catalog.partial.html"
-      ></section>
-      <!-- End Yankovych Maksym -->
-      <!--Start Lozovyi Taras-->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.features.partial.html"
-      ></section>
-      <!--End Lozovyi Taras-->
-      <!-- Start Yankovych Maksym -->
-      <section 
-        data-hx-trigger="load" 
-        data-hx-swap="outerHTML" 
-        data-hx-get="index.modal.partial.html"
-      ></section>
-      <!-- End Yankovych Maksym -->
-    </main>
-    <footer class="footer"></footer>
-  </body>
+<body>
+  <!-- Start Feshchenko Bogdan -->
+  <header class="header">
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header-nav.partial.html"></section>
+  </header>
+  <!-- Start Feshchenko Bogdan -->
+  <main class="main">
+    <!-- Start Viktoria Sikorska -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.history.partial.html"></section>
+    <!-- End Viktoria Sikorska -->
+
+    <!-- Start Rezunenko Oleksandr  -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.about-us.partial.html"></section>
+    <!-- End Rezunenko Oleksandr  -->
+    <!-- Start Andrii Komiakov -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.types.partial.html"></section>
+    <!-- End Andrii Komiakov -->
+    <!-- Start Roman Lashkevych -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.style-inspiration.partial.html">
+    </section>
+    <!-- End Roman Lashkevych -->
+    <!-- Start Oleh Sinkovskyi -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.discount.partial.html"></section>
+    <!-- End Oleh Sinkovskyi -->
+    <!-- Start Oleksandr Tsupko -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.our-team.partial.html"></section>
+    <!-- End Oleksandr Tsupko -->
+    <!-- Start Maria Radionova -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.quote.partial.html"></section>
+    <!-- End Radionova Maria -->
+    <!-- Start Alina Kovryha -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.benefits.partial.html"></section>
+    <!-- End Alina Kovryha -->
+    <!--Start Osypenko Iryna-->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.latest-news.partial.html"></section>
+    <!--End Osypenko Iryna-->
+    <!-- Start Artur Peretiatko-->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.gallery-about.partial.html"></section>
+    <!-- End Artur Peretiatko-->
+    <!-- Start Nerush Illya -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.call-to-action.partial.html"></section>
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.faq.partial.html"></section>
+    <!-- End Nerush Illya -->
+    <!-- Start Krichfalushi Liana -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.sale-now-on.partial.html"></section>
+    <!-- End Krichfalushi Liana -->
+    <!-- Start Vakulenko Veronika -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.featured-favorites.partial.html">
+    </section>
+    <!-- End Vakulenko Veronika -->
+    <!-- Start Yankovych Maksym -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.catalog.partial.html"></section>
+    <!-- End Yankovych Maksym -->
+    <!--Start Lozovyi Taras-->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.features.partial.html"></section>
+    <!--End Lozovyi Taras-->
+    <!-- Start Yankovych Maksym -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.modal.partial.html"></section>
+    <!-- End Yankovych Maksym -->
+  </main>
+  <footer class="footer"></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
 </html>
