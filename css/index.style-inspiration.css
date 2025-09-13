@@ -107,20 +107,32 @@
  }
 
  .inspiration__offer{
-  margin-top: 65px;
-  margin-bottom: 40px;
+  margin: 65px 15px 40px 15px; 
   max-width: 100%;
   background-color: #ededed;
   display: flex;
+  flex-direction: row;
+
+  @media (max-width: 768px){
+    flex-direction: column;
+     .inspiration__offer-text-container{
+    max-width: 100%;
+ }
+  .inspiration__offer-image{
+  max-width: 100%;
+ }
+ }
  }
 
  .inspiration__offer-image{
   max-width: 50%;
+  object-fit: crop;
  }
 
  .inspiration__offer-text-container{
    max-width: 50%;
    text-align: left;
+   padding: 60px 20px;
  }
 
  .inspiration__offer-title{
@@ -142,28 +154,34 @@
   font-size: 32px;
  }
 
- .inspiration__offer-subtitile--highlight{
+ .inspiration__offer-subtitle--highlight{
   color: #b07f4c;
-  font-weight: 500;
+  font-family: "Zen Kaku Gothic New Bold", sans-serif;
  }
 
  .inspiration__offer-text{
-  font-family: 'IBM Plex Sans Regular', sans-serif;
+  font-family: 'IBM Plex Sans Light', sans-serif;
   font-size: 19px;
   color: #858585;
-  font-weight: 500;
+  font-weight: 600;
  }
 
  .inspiration__offer-points{
   margin-top: 25px;
-  font-family: 'IBM Plex Sans Regular', sans-serif;
+  font-family: 'IBM Plex Sans Light', sans-serif;
+  font-weight: 300;
   font-size: 15px;
   color: #858585;
-  font-weight: 500;
+  list-style: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
  }
 
  .inspiration__offer-point{
-  margin-bottom: 10px;
-  margin-left: 10px;
+  margin-bottom: 7px;
+ }
+
+ .inspiration__offer-bulletpoint{
+  color: #b07f4c;
  }
 
