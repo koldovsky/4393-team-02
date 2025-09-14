@@ -57,7 +57,7 @@
     left: 0;
 }
 
-.our-team__management {
+.our-team__members-list {
   display: grid;
   grid-template-columns: 500px 500px;
   grid-gap: 10px;
