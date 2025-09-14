@@ -97,7 +97,7 @@
     </div>
   </article>
 
-  <article class="types__card">
+  <article class="types__card types__card--full-width">
     <div class="types__card__image" id="types__card__image--textiles"></div>
     <div class="types__card__body">
       <span>From $12</span>
@@ -147,76 +147,3 @@
     </div>
   </article>
 </section>
-
-<style>
-  #types {
-    display: grid;
-    padding: 30px;
-    gap: 30px;
-  }
-
-  .types__card {
-    background-color: #f2f2f2;
-  }
-
-  .types__card__image {
-    width: 300px;
-    height: 300px;
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .types__card__body__button {
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    padding: 12px;
-    border: 1px solid #000000;
-  }
-  .types__card__body__button,
-  .types__card__body__button span,
-  .types__card__body__button svg path {
-    transition: 0.3s all;
-  }
-
-  .types__card__body__button span {
-    color: #000000;
-  }
-
-  .types__card__body__button:hover {
-    background-color: #000000;
-  }
-
-  .types__card__body__button:hover span {
-    color: #ffffff;
-  }
-
-  .types__card__body__button:hover svg path {
-    stroke: #ffffff;
-  }
-
-  .types__card__body {
-    padding: 24px;
-  }
-  .types__card__body__divider {
-    width: 33px;
-  }
-
-  #types__card__image--home-accent {
-    background-image: url("./img/types/home_accents.png");
-  }
-  #types__card__image--wall-decor {
-    background-image: url("./img/types/wall_decor.png");
-  }
-  #types__card__image--textiles {
-    background-image: url("./img/types/textiles.png");
-  }
-
-  @media (min-width: 1080px) {
-    .types__card {
-      display: flex;
-    }
-  }
-</style>
