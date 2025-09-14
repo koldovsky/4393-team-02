@@ -12,7 +12,12 @@
     --text-primary: #3A3A3A;
     --color-text-secondary: #2B2B2B;
     --color-text-gray: #858585;
+    --color-text-gray-secondary: #847868; 
+    --color-text-highlight: #b07f4c;
+    --color-background-white: #ffffff;
     --color-background-light: #f3f3f3;
+    --color-background-grey: #ededed;
+    
 }
 
 @font-face {

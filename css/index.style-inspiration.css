@@ -1,22 +1,17 @@
-:root{
-    --color-background: #ffffff;
-    --color-heading: rgb(132, 120, 104);
-    --color-text: #3a3a3a;
-}
 
 .inspiration{
     max-width: 1200px;
     margin: 0 auto;
-    background-color: var(--color-background);
-    color: #3a3a3a;
+    background-color: var(--color-background-white);
+    color: var(--text-primary);
     text-align: center;
     padding-top: 120px;
     }
 
     .inspiration__title{
         display: inline-block;
-        color: #847868;
-        background-color: #f3f3f3;
+        color: var(--color-text-gray-secondary);
+        background-color: var(--color-background-light);
         text-transform: uppercase;
          font-family: 'IBM Plex Sans Light', sans-serif;
          font-size: 11px;
@@ -34,7 +29,7 @@
   .inspiration__text--description{
     font-size: 19px;
     font-family: 'IBM Plex Sans Medium', sans-serif;
-    color: #858585;
+    color: var(--color-text-gray);
  }
 
  .inspiration__list{
@@ -59,7 +54,7 @@
    position: absolute;
    left: 20px;
    bottom: -80px;
-   background-color: #ffffff;
+   background-color: var(--color-background-white);
  }
 
  .inspiration__list-item{
@@ -79,13 +74,13 @@
  .inspiration__item-title{
   font-family: "Zen Kaku Gothic New Regular", sans-serif;
   font-size: 26px;
-  color: #2b2b2b;
+  color: var(--color-text-secondary);
  }
 
  .inspiration__item-description{
     font-family: "IBM Plex Sans Medium", sans-serif;
     font-size: 15px;
-    color: #858585;
+    color: var(--color-text-gray);
     font-style: italic;
     margin-top: 20px;
  }
@@ -95,12 +90,12 @@
   margin-bottom: 25px;
   font-family: "Zen Kaku Gothic New Medium", sans-serif;
   font-size: 32px;
-  color: #3a3a3a;
+  color: var(--text-primary);
  }
 
  .inspiration__link{
   font-family: "IBM Plex Sans Bold", sans-serif;
-  color: #b07f4c;
+  color: var(--color-text-highlight);
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -109,7 +104,7 @@
  .inspiration__offer{
   margin: 65px 15px 40px 15px; 
   max-width: 100%;
-  background-color: #ededed;
+  background-color: var(--color-background-grey);
   display: flex;
   flex-direction: row;
 
@@ -138,9 +133,9 @@
  .inspiration__offer-title{
   margin-top: 20px;
   display: inline-block;
-  background-color: #ffffff;
+  background-color: var(--color-background-white);
   font-family: 'IBM Plex Sans Regular', sans-serif;
-  color: #858585;
+  color: var(--color-text-gray);
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -149,20 +144,20 @@
 
  .inspiration__offer-subtitle{
   margin-top: 20px;
-  color: #3a3a3a;
+  color: var(--text-primary);
   font-family: "Zen Kaku Gothic New SemiBold", sans-serif;
   font-size: 32px;
  }
 
  .inspiration__offer-subtitle--highlight{
-  color: #b07f4c;
+  color: var(--color-text-highlight);
   font-family: "Zen Kaku Gothic New Bold", sans-serif;
  }
 
  .inspiration__offer-text{
   font-family: 'IBM Plex Sans Light', sans-serif;
   font-size: 19px;
-  color: #858585;
+  color: var(--color-text-gray);
   font-weight: 600;
  }
 
@@ -171,7 +166,8 @@
   font-family: 'IBM Plex Sans Light', sans-serif;
   font-weight: 300;
   font-size: 15px;
-  color: #858585;
+  padding-left: 0;
+  color: var(--color-text-gray);
   list-style: none;
   font-weight: 600;
   letter-spacing: 0.5px;
@@ -182,6 +178,6 @@
  }
 
  .inspiration__offer-bulletpoint{
-  color: #b07f4c;
+  color: var(--color-text-highlight);
  }
 
