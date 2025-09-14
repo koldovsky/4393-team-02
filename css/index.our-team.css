@@ -57,6 +57,18 @@
     left: 0;
 }
 
+.our-team__management {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  grid-gap: 10px;
+}
+
+.our-team__member {
+  display: grid;
+  grid-template-columns: 200px 300px;
+  grid-gap: 10px;
+}
+
 .our-team__picture-employee {
     border-radius: 50%;
     object-fit: cover;
