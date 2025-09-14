@@ -8,6 +8,13 @@
   box-sizing: border-box;
 }
 
+:root {
+    --text-primary: #3A3A3A;
+    --color-text-secondary: #2B2B2B;
+    --color-text-gray: #858585;
+    --color-background-light: #f3f3f3;
+}
+
 @font-face {
     font-weight: 300;
     font-family: "IBM Plex Sans Light";
