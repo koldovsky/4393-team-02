@@ -25,15 +25,18 @@
     --color-background-dark-сharcoal: #3b3b3b;
     --color-background-charcoal-blue: #464c5c;
     --color-background-chip: rgba(255, 255, 255, 0.24);
+    --color-background-light-gray: #f9f9f9;
 
     --color-border-white: #ffffff;
     --color-border-mid: rgba(255,255,255,0.3);
     --color-border-light: rgba(255,255,255,0.2);
     --color-border-dark-gold: #b07f4c;
+    --color-border-very-light-gray: #eee;
 
     --color-icon: #ffffff;
 
     --shadow-elev-1: 0 1px 6px 1px rgba(145, 153, 171, 0.3);
+    --color-shadow-very-light-transparent-black: rgba(0, 0, 0, 0.08);
 }
 
 @font-face {
