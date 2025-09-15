@@ -187,11 +187,11 @@
 
 .discount__decor {
   margin-top: 12px;
-  background: #ffffff;            /* біле поле */
-  border: 1px solid #e6e6e6;      /* тонка сіра рамка */
-  border-radius: 0;               /* БЕЗ скруглень */
-  padding: 16px;                  /* ширина білого поля */
-  box-shadow: none;               /* без тіні */
+  background: #ffffff;            
+  border: 1px solid #e6e6e6;      
+  border-radius: 0;               
+  padding: 16px;                  
+  box-shadow: none;        
 }
 
 .discount__decor img {
