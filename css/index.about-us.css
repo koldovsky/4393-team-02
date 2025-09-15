@@ -139,7 +139,7 @@
 
 @media (min-width: 1500px) {
   .about-us__image-wrapper {
-    max-width: 684px;
+    max-width: 584px;
     height: auto;
     flex: 0 0 auto;
   }
