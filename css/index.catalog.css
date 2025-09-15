@@ -1,7 +1,7 @@
 .catalog {
     width: 100%;
     padding: 90px 0;
-    background-color: #2b2b2b;
+    background-color: var(--color-background-сharcoal);
 
     .catalog__container {
         width: 100%;
@@ -21,8 +21,8 @@
         font-size: 11px;
         letter-spacing: 2.2px;
         text-transform: uppercase;
-        color: rgb(255, 255, 255);
-        background-color: rgb(59, 59, 59);
+        color: var(--color-text-white);
+        background-color: var(--color-background-dark-сharcoal);
         font-family: "IBM Plex Sans Regular", sans-serif;
     }
 
@@ -31,7 +31,7 @@
         font-size: 38px;
         text-align: center;
         line-height: 41.8px;
-        color: rgb(255, 255, 255);
+        color: var(--color-text-white);
         font-family: "Zen Kaku Gothic New Medium", sans-serif;
     }
 
@@ -46,7 +46,7 @@
         font-size: 19px;
         text-align: center;
         line-height: 28.5px;
-        color: rgb(255, 255, 255);
+        color: var(--color-text-white);
         font-family: "IBM Plex Sans Medium", sans-serif;
     }
 
@@ -124,7 +124,7 @@
     .filters__toggle-text {
         font-size: 14px;
         line-height: 23.8px;
-        color: rgb(255, 255, 255);
+        color: var(--color-text-white);
         font-family: "IBM Plex Sans Medium", sans-serif;
     }
 
@@ -149,8 +149,8 @@
         .filters__title {
             margin-bottom: 24px;
             font-size: 26px;
-            color: rgb(255, 255, 255);
-            font-family: "Zen Kaku Gothic New Medium";
+            color: var(--color-text-white);
+            font-family: "Zen Kaku Gothic New Medium", sans-serif;
         }
 
         .filters__form {
@@ -160,11 +160,13 @@
         }
 
         .filters__section {
+            cursor: pointer;
             width: 100%;
             padding: 24px 0;
             display: flex;
             flex-direction: column;
-            border-top: 1px solid rgb(255, 255, 255, 0.2);
+            border-top: 1px solid var(--color-border-light);
+            
         }
 
         .filters__header {
@@ -177,18 +179,16 @@
 
         .filters__header-text {
             font-size: 21px;
-            color: rgb(255, 255, 255);
-            font-family: "IBM Plex Sans Regular";
+            color: var(--color-text-white);
+            font-family: "IBM Plex Sans Regular", sans-serif;
         }
 
         .filters__header-icon {
             width: 24px;
             height: 24px;
-            transform: rotate(-180deg);
-        }
-
-        .filters__header-icon {
-            fill: rgb(255, 255, 255);
+            transform: rotate(0deg);
+            transition: 0.2s ease-in;
+            fill: var(--color-icon);
         }
 
         .filters__content {
@@ -211,6 +211,7 @@
         .filters__label {
             width: 100%;
             display: flex;
+            cursor: pointer;
         }
 
         .filters__input--radio {
@@ -230,13 +231,13 @@
             flex-direction: row;
             align-items: center;
             font-size: 17px;
-            color: rgb(255, 255, 255);
-            font-family: "IBM Plex Sans Regular";
-            transition: 0.2s ease;
+            color: var(--color-text-white);
+            font-family: "IBM Plex Sans Regular", sans-serif;
+            transition: 0.2s ease-in;
         }
 
         .filters__input--radio:checked + .filters__label-text {
-            font-family: "IBM Plex Sans Bold";
+            font-family: "IBM Plex Sans Bold", sans-serif;
         }
 
         .filters__input--checkbox + .filters__label-text::before {
@@ -244,12 +245,12 @@
             width: 16px;
             height: 16px;
             display: flex;
-            border: 1px solid rgb(255, 255, 255);
+            border: 1px solid var(--color-border-white);
         }
 
         .filters__input--checkbox:checked + .filters__label-text::before {
-            background-color: rgb(176, 127, 76);
-            border: 1px solid rgb(176, 127, 76);
+            border: 1px solid var(--color-border-dark-gold);
+            background-color: var(--color-background-dark-gold);
         }
 
         .filters__input--checkbox:checked + .filters__label-text::after {
@@ -260,15 +261,58 @@
             top: 6.5px;
             left: 3.5px;
             transform: rotate(135deg);
-            border-top: 2px solid rgb(255, 255, 255);
-            border-right: 2px solid rgb(255, 255, 255);
+            border-top: 2px solid var(--color-border-white);
+            border-right: 2px solid var(--color-border-white);
         }
 
         .filters__slider {
+            position: relative;
+            width: 100%;
+            height: 16px;
+        }
+
+        .filters__slider--track {
+            position: absolute;
+            left: 0;
+            top: 0;
             width: 100%;
             height: 4px;
-            accent-color: rgb(176, 127, 76);
-            background-color: rgb(255, 255, 255);
+            background-color: var(--color-background-white);
+        }
+
+        .filters__slider--active {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 4px;
+            background-color: var(--color-background-dark-gold);
+        }
+
+        .filters__slider--thumb {
+            position: absolute;
+            top: -6px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: var(--color-background-dark-gold);
+        }
+
+        .filters__slider--thumb-min {
+            left: 0;
+        }
+
+        .filters__slider--thumb-max {
+            right: 0;
+        }
+
+        .filters__slider--input {
+            position: absolute;
+            inset: 0;
+            opacity: 0;  
+            width: 100%;
+            height: 4px;        
+            appearance: none;    
+            pointer-events: all;          
         }
 
         .filters__values {
@@ -283,11 +327,11 @@
         .filters__value {
             width: 96px;
             padding: 15px 17px;
-            background-color: rgba(255, 255, 255, 0.24);
+            background-color: var(--color-background-chip);
             text-align: center;
             font-size: 12px;
-            color: rgb(255, 255, 255);
-            font-family: "IBM Plex Sans Regular";
+            color: var(--color-text-white);
+            font-family: "IBM Plex Sans Regular", sans-serif;
         }
     }
 }
@@ -303,6 +347,7 @@
         width: 100%;
         gap: 8px 8px;
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         margin-bottom: 16px;
     }
@@ -321,16 +366,16 @@
         font-size: 14px;
         line-height: 16.8px;
         transition: 0.2s ease-in;
-        color: rgb(255, 255, 255);
+        color: var(--color-text-white);
         font-family: "IBM Plex Sans SemiBold", sans-serif;
         background-color: transparent;
-        border: 1px solid rgb(255, 255, 255);
+        border: 1px solid var(--color-border-white);
     }
 
     .products__more-btn:hover {
         cursor: pointer;
-        color: rgb(43, 43, 43);
-        background-color: rgb(255, 255, 255);
+        color: var(--color-text-secondary);
+        background-color: var(--color-background-white);
     }
 
     @media (min-width: 480px) {
@@ -355,20 +400,20 @@
         padding: 4px 8px;
         display: flex;
         flex-direction: row;
-        border: 1px solid rgba(255, 255, 255, 0.3);
+        border: 1px solid var(--color-border-mid);
     }
 
     .applied-filters__label {
         font-size: 14px;
         line-height: 23.8px;
-        color: rgb(255, 255, 255);
+        color: var(--color-text-white);
         font-family: "IBM Plex Sans Medium", sans-serif;
     }
 
     .applied-filters__value {
         font-size: 14px;
         line-height: 23.8px;
-        color: rgb(255, 255, 255);
+        color: var(--color-text-white);
         font-family: "IBM Plex Sans Medium", sans-serif;
     }
 
@@ -393,7 +438,7 @@
         font-size: 14px;
         line-height: 23.8px;
         text-decoration: underline;
-        color: rgb(255, 255, 255);
+        color: var(--color-text-white);
         background-color: transparent;
         font-family: "IBM Plex Sans Medium", sans-serif;
     }
@@ -448,16 +493,16 @@
         left: 4px;
         padding: 4px 8px;
         border-radius: 4px;
-        background-color: rgb(70, 76, 92);
+        background-color: var(--color-background-charcoal-blue);
         font-size: 14px;
-        color: rgb(255, 255, 255);
+        color: var(--color-text-white);
         font-family: "IBM Plex Sans SemiBold", sans-serif;
     }
 
     .product__title {
         font-size: 18px;
         line-height: 25.2px;
-        color: rgb(255, 255, 255);
+        color: var(--color-text-white);
         font-family: "IBM Plex Sans Regular", sans-serif;
     }
 
@@ -473,7 +518,7 @@
     .product__price-old {
         font-size: 18px;
         line-height: 25.2px;
-        color: rgb(255, 255, 255);
+        color: var(--color-text-white);
         text-decoration: line-through;
         font-family: "IBM Plex Sans Regular", sans-serif;
     }
@@ -481,7 +526,7 @@
     .product__price-new {
         font-size: 18px;
         line-height: 25.2px;
-        color: rgb(255, 255, 255);
+        color: var(--color-text-white);
         font-family: "IBM Plex Sans Regular", sans-serif;
     }
 
@@ -492,16 +537,16 @@
         font-size: 14px;
         line-height: 16.8px;
         transition: 0.2s ease-in;
-        color: rgb(255, 255, 255);
+        color: var(--color-text-white);
         font-family: "IBM Plex Sans SemiBold", sans-serif;
-        background-color: rgb(176, 127, 76);
-        border: 1px solid rgb(176, 127, 76);
+        border: 1px solid var(--color-border-dark-gold);
+        background-color: var(--color-background-dark-gold);
     }
 
     .product__button:hover {
-        color: rgb(43, 43, 43);
-        background-color: rgb(255, 255, 255);
-        border: 1px solid rgb(255, 255, 255);
+        color: var(--color-text-secondary);
+        border: 1px solid var(--color-border-white);
+        background-color: var(--color-background-white);
     }
 
     @media (min-width: 768px) {
