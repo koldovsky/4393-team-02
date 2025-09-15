@@ -32,7 +32,6 @@
 
     .latest-news__line{
         text-align: center;
-
     }
 
     .latest-news__desc{ 
@@ -48,22 +47,63 @@
     }
 
     .latest-news__list{
+        background-color: var(--color-background-white);
 
         .latest-news__item{
+
+
             .latest-news__image{
-
+                display: block;
+                max-width: 100%;
             }
+
             .latest-news__content{
+
                 .latest-news__date{
-
+                    text-align: left;
+                    font-size: 14px;
+                    font-weight: 500;
+                    font-family: "IBM Plex Sans", sans-serif;
+                    color: var(--color-text-gray);
+                    display: block;
                 }
+
                 .latest-news__heading{
+                    text-align: left;
+                    font-size: 22px;
+                    font-weight: 500;
+                    font-family: "Zen Kaku Gothic New Medium";
+                    color: var(--text-primary);
+                    display: block;
 
                 }
+
                 .latest-news__text{
-
+                    text-align: left;
+                    font-size: 17px;
+                    font-weight: 500;
+                    font-family: "IBM Plex Sans", sans-serif;
+                    color: var(--color-text-gray);
+                    display: block;
                 }
+
                 .latest-news__link.button{
+                    text-align: center;
+                    font-family: "IBM Plex Sans", sans-serif;
+                    font-size: 12.6px;
+                    font-weight: 700;
+                    color: var(--color-background-white);
+                    padding: 0 32 0 0px;
+                    border: 1px solid var(--color-text-highlight);
+                    background-color: var(--color-text-highlight);
+                    display: inline-block;
+                    text-decoration: none;
+
+                    &:hover {
+                        background-color: var(--color-text-secondary);
+                        color: var(--color-background-white);
+                        border-color: var(--color-text-secondary);
+                    }
 
                 }
             }
