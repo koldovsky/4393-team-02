@@ -1,12 +1,4 @@
 .about-us {
-  --color-light-grey: #f3f3f3;
-  --color-medium-grey: #858585;
-  --color-dark-grey: #3a3a3a;
-  --color-white: #ffffff;
-  --color-gold: #b07f4c;
-}
-
-.about-us {
   padding: 24px;
 }
 
@@ -20,12 +12,12 @@
 .about-us__image-wrapper img {
   max-width: 100%;
   height: auto;
-  border: 10px solid var(--color-light-grey);
+  border: 10px solid var(--color-background-light);
   margin: 10px 5px;
 }
 
 .about-us-text-block {
-  background-color: var(--color-light-grey);
+  background-color: var(--color-background-light);
   margin: 0 auto;
   max-width: 100%;
   padding: 40px 10px;
@@ -35,8 +27,8 @@
 .about-us__title {
   display: block;
   font-family: "IBM Plex Sans", sans-serif;
-  color: var(--color-medium-grey);
-  background-color: var(--color-white);
+  color: var(--color-text-gray);
+  background-color: var(--color-text-white);
   font-size: 11px;
   font-weight: normal;
   letter-spacing: 0.1em;
@@ -48,7 +40,7 @@
 }
 
 .about-us__subtitle {
-  color: var(--color-dark-grey);
+  color: var(--text-primary);
   font-size: 38px;
   line-height: 40px;
   padding: 10px 0 0 18px;
@@ -57,7 +49,7 @@
 
 .about-us__text-introduction {
   font-family: "IBM Plex Sans SemiBold", sans-serif;
-  color: var(--color-medium-grey);
+  color: var(--color-text-gray);
   padding: 0 0 40px 20px;
   line-height: 25px;
 }
@@ -67,17 +59,17 @@
 }
 
 .about-us__text {
-  color: var(--color-medium-grey);
+  color: var(--color-text-gray);
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 17px;
   padding: 0 0 35px 20px;
 }
 
 .about-us__btn {
-  color: var(--color-white);
+  color: var(--color-text-white);
   font-family: "IBM Plex Sans Bold", sans-serif;
   font-size: 14px;
-  background-color: var(--color-gold);
+  background-color: var(--color-text-highlight);
   text-decoration: none;
   padding: 15px 15px;
   margin-left: 20px;
@@ -85,20 +77,20 @@
 }
 
 .about-us__btn:hover {
-  background-color: var(--color-dark-grey);
+  background-color: var(--text-primary);
 }
 
 .about-us__quote-block {
   font-family: "IBM Plex Sans Light", sans-serif;
   font-size: 20px;
-  color: var(--color-medium-grey);
+  color: var(--color-text-gray);
   text-align: center;
 }
 
 .about-us__quote-symbol {
   width: 45px;
   height: 45px;
-  color: var(--color-gold);
+  color: var(--color-text-highlight);
   display: block;
   margin: 30px auto 20px;
 }
@@ -115,7 +107,7 @@
 }
 
 .about-us__contact-link {
-  color: var(--color-gold);
+  color: var(--color-text-highlight);
 }
 
 @media (min-width: 768px) {
@@ -140,13 +132,15 @@
   .about-us-text-block {
     flex: 1;
     margin: 10px 0;
+    min-width: 80px;
     max-width: 500px;
   }
 }
 
 @media (min-width: 1500px) {
   .about-us__image-wrapper {
-    max-width: 584px;
+    max-width: 684px;
+    height: auto;
     flex: 0 0 auto;
   }
 
