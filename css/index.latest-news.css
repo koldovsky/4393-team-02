@@ -1,0 +1,115 @@
+.latest-news{
+    background-color: #f9f9f9;
+    width: 100vw;
+    padding: 40px 16px;
+
+    .latest-news__title{
+        text-align: center;
+        font-size: 11px;
+        font-weight: 400;
+        letter-spacing: 2.2px;
+        width: max-content;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #fff;
+        background-color: #fff;
+        text-transform: uppercase;
+        font-family: "IBM Plex Sans", sans-serif;
+        color: var(--color-text-gray);
+    }
+
+    .latest-news__subtitle{
+        text-align: center;
+        font-size: 38px;
+        font-weight: 500;
+        display: block;
+        width: 100%;
+        max-width: none;
+        margin: 0 auto;
+        font-family: "Zen Kaku Gothic New Medium";
+        color: var(--text-primary);
+    }
+
+    .latest-news__line{
+        text-align: center;
+    }
+
+    .latest-news__desc{ 
+        text-align: center;
+        font-size: 19px;
+        font-weight: 500;
+        display: block;
+        width: 100%;
+        max-width: none;
+        margin: 0 auto;
+        font-family: "IBM Plex Sans", sans-serif;
+        color: var(--color-text-gray);
+    }
+
+    .latest-news__list{
+        background-color: var(--color-background-white);
+
+        .latest-news__item{
+
+
+            .latest-news__image{
+                display: block;
+                max-width: 100%;
+            }
+
+            .latest-news__content{
+
+                .latest-news__date{
+                    text-align: left;
+                    font-size: 14px;
+                    font-weight: 500;
+                    font-family: "IBM Plex Sans", sans-serif;
+                    color: var(--color-text-gray);
+                    display: block;
+                }
+
+                .latest-news__heading{
+                    text-align: left;
+                    font-size: 22px;
+                    font-weight: 500;
+                    font-family: "Zen Kaku Gothic New Medium";
+                    color: var(--text-primary);
+                    display: block;
+
+                }
+
+                .latest-news__text{
+                    text-align: left;
+                    font-size: 17px;
+                    font-weight: 500;
+                    font-family: "IBM Plex Sans", sans-serif;
+                    color: var(--color-text-gray);
+                    display: block;
+                }
+
+                .latest-news__link.button{
+                    text-align: center;
+                    font-family: "IBM Plex Sans", sans-serif;
+                    font-size: 12.6px;
+                    font-weight: 700;
+                    color: var(--color-background-white);
+                    padding: 0 32 0 0px;
+                    border: 1px solid var(--color-text-highlight);
+                    background-color: var(--color-text-highlight);
+                    display: inline-block;
+                    text-decoration: none;
+
+                    &:hover {
+                        background-color: var(--color-text-secondary);
+                        color: var(--color-background-white);
+                        border-color: var(--color-text-secondary);
+                    }
+
+                }
+            }
+        }
+
+    }
+
+
+}
