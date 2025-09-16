@@ -17,6 +17,7 @@
   --color-text-white: #ffffff;
   --color-text-highlight: #b07f4c;
   --color-text-gray-secondary: #847868;
+  --color-text-christmas-silver: #b5b5b5;
 
   --color-background-grey: #ededed;
   --color-background-light: #f3f3f3;
@@ -27,6 +28,7 @@
   --color-background-charcoal-blue: #464c5c;
   --color-background-chip: rgba(255, 255, 255, 0.24);
   --color-background-light-gray: #f9f9f9;
+  --color-background-alabaster-white: #fafafa;
 
   --color-border-white: #ffffff;
   --color-border-mid: rgba(255, 255, 255, 0.3);
