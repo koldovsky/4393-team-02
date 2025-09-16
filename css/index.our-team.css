@@ -65,7 +65,7 @@ html {
 }
 
 .our-team__visibility-button button:hover {
-    color: rgb(43, 43, 43);
+    color: var(--color-text-secondary);
 }
 
 .our-team__visibility-button button:hover:after {
@@ -101,7 +101,7 @@ html {
     gap: 15px;
     padding: 15px;
     border-radius: 10px;
-    background: #fafafa;
+    background: var(--color-background-alabaster-white);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -189,19 +189,19 @@ html {
 .our-team__member-header {
     font-family: "Zen Kaku Gothic New", sans-serif;
     font-size: 23px;
-    color: rgb(43, 43, 43);
+    color: var(--color-text-eclipse);
     margin: 0 0 8px;
 }
 
 .our-team__position {
     font-size: 14px;
-    color: rgb(133, 133, 133);
+    color: var(--color-text-gray);
     margin-bottom: 5px;
 }
 
 .our-team__email {
     font-size: 14px;
-    color: rgb(133, 133, 133);
+    color: var(--color-text-gray);
     margin-bottom: 8px;
     display: inline-block;
     text-decoration: none;
@@ -209,7 +209,7 @@ html {
 
 .our-team__description {
     font-size: 15px;
-    color: rgb(133, 133, 133);
+    color: var(--color-text-gray);
     font-weight: 300;
     margin-bottom: 10px;
     line-height: 1.5;
@@ -217,11 +217,11 @@ html {
 
 .our-team__more {
     font-size: 14px;
-    color: rgb(181, 181, 181);
+    color: var(--color-text-christmas-silver);
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .our-team__more:hover {
-    color: rgb(43, 43, 43);
+    color: var(--color-text-eclipse);
 }
