@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Zen+Kaku+Gothic+New&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Zen+Kaku+Gothic+New&display=swap");
 
 *,
 *::after,
@@ -9,86 +9,96 @@
 }
 
 :root {
-    --text-primary: #3a3a3a;
+  --text-primary: #3a3a3a;
 
-    --color-text-secondary: #2b2b2b;
-    --color-text-gray: #858585;
-    --color-text-white: #ffffff;
-    --color-text-highlight: #b07f4c;
-    --color-text-gray-secondary: #847868; 
+  --color-text-secondary: #2b2b2b;
+  --color-text-gray: #858585;
+  --color-text-white: #ffffff;
+  --color-text-highlight: #b07f4c;
+  --color-text-gray-secondary: #847868;
 
-    --color-background-grey: #ededed;
-    --color-background-light: #f3f3f3;
-    --color-background-white: #ffffff;
-    --color-background-сharcoal: #2b2b2b;
-    --color-background-dark-gold: #b07f4c;
-    --color-background-dark-сharcoal: #3b3b3b;
-    --color-background-charcoal-blue: #464c5c;
-    --color-background-chip: rgba(255, 255, 255, 0.24);
-    --color-background-light-gray: #f9f9f9;
+  --color-background-grey: #ededed;
+  --color-background-light: #f3f3f3;
+  --color-background-white: #ffffff;
+  --color-background-сharcoal: #2b2b2b;
+  --color-background-dark-gold: #b07f4c;
+  --color-background-dark-сharcoal: #3b3b3b;
+  --color-background-charcoal-blue: #464c5c;
+  --color-background-chip: rgba(255, 255, 255, 0.24);
+  --color-background-light-gray: #f9f9f9;
 
-    --color-border-white: #ffffff;
-    --color-border-mid: rgba(255,255,255,0.3);
-    --color-border-light: rgba(255,255,255,0.2);
-    --color-border-dark-gold: #b07f4c;
-    --color-border-very-light-gray: #eee;
+  --color-border-white: #ffffff;
+  --color-border-mid: rgba(255, 255, 255, 0.3);
+  --color-border-light: rgba(255, 255, 255, 0.2);
+  --color-border-dark-gold: #b07f4c;
+  --color-border-very-light-gray: #eee;
 
-    --color-icon: #ffffff;
+  --color-icon: #ffffff;
 
-    --shadow-elev-1: 0 1px 6px 1px rgba(145, 153, 171, 0.3);
-    --color-shadow-very-light-transparent-black: rgba(0, 0, 0, 0.08);
+  --shadow-elev-1: 0 1px 6px 1px rgba(145, 153, 171, 0.3);
+  --color-shadow-very-light-transparent-black: rgba(0, 0, 0, 0.08);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
 }
 
 @font-face {
-    font-weight: 300;
-    font-family: "IBM Plex Sans Light";
-    src: url("../fonts/IBM_Plex_Sans/static/IBMPlexSans-Light.ttf");
+  font-weight: 300;
+  font-family: "IBM Plex Sans Light";
+  src: url("../fonts/IBM_Plex_Sans/static/IBMPlexSans-Light.ttf");
 }
 
 @font-face {
-    font-weight: 400;
-    font-family: "IBM Plex Sans Regular";
-    src: url("../fonts/IBM_Plex_Sans/static/IBMPlexSans-Regular.ttf");
+  font-weight: 400;
+  font-family: "IBM Plex Sans Regular";
+  src: url("../fonts/IBM_Plex_Sans/static/IBMPlexSans-Regular.ttf");
 }
 
 @font-face {
-    font-weight: 500;
-    font-family: "IBM Plex Sans Medium";
-    src: url("../fonts/IBM_Plex_Sans/static/IBMPlexSans-Medium.ttf");
+  font-weight: 500;
+  font-family: "IBM Plex Sans Medium";
+  src: url("../fonts/IBM_Plex_Sans/static/IBMPlexSans-Medium.ttf");
 }
 
 @font-face {
-    font-weight: 600;
-    font-family: "IBM Plex Sans SemiBold";
-    src: url("../fonts/IBM_Plex_Sans/static/IBMPlexSans-SemiBold.ttf");
+  font-weight: 600;
+  font-family: "IBM Plex Sans SemiBold";
+  src: url("../fonts/IBM_Plex_Sans/static/IBMPlexSans-SemiBold.ttf");
 }
 
 @font-face {
-    font-weight: 700;
-    font-family: "IBM Plex Sans Bold";
-    src: url("../fonts/IBM_Plex_Sans/static/IBMPlexSans-Bold.ttf");
+  font-weight: 700;
+  font-family: "IBM Plex Sans Bold";
+  src: url("../fonts/IBM_Plex_Sans/static/IBMPlexSans-Bold.ttf");
 }
 
 @font-face {
-    font-weight: 300;
-    font-family: "Zen Kaku Gothic New Light";
-    src: url("../fonts/Zen_Kaku_Gothic_New/ZenKakuGothicNew-Light.ttf");
+  font-weight: 300;
+  font-family: "Zen Kaku Gothic New Light";
+  src: url("../fonts/Zen_Kaku_Gothic_New/ZenKakuGothicNew-Light.ttf");
 }
 
 @font-face {
-    font-weight: 400;
-    font-family: "Zen Kaku Gothic New Regular";
-    src: url("../fonts/Zen_Kaku_Gothic_New/ZenKakuGothicNew-Regular.ttf");
+  font-weight: 400;
+  font-family: "Zen Kaku Gothic New Regular";
+  src: url("../fonts/Zen_Kaku_Gothic_New/ZenKakuGothicNew-Regular.ttf");
 }
 
 @font-face {
-    font-weight: 500;
-    font-family: "Zen Kaku Gothic New Medium";
-    src: url("../fonts/Zen_Kaku_Gothic_New/ZenKakuGothicNew-Medium.ttf");
+  font-weight: 500;
+  font-family: "Zen Kaku Gothic New Medium";
+  src: url("../fonts/Zen_Kaku_Gothic_New/ZenKakuGothicNew-Medium.ttf");
 }
 
 @font-face {
-    font-weight: 700;
-    font-family: "Zen Kaku Gothic New Bold";
-    src: url("../fonts/Zen_Kaku_Gothic_New/ZenKakuGothicNew-Bold.ttf");
+  font-weight: 700;
+  font-family: "Zen Kaku Gothic New Bold";
+  src: url("../fonts/Zen_Kaku_Gothic_New/ZenKakuGothicNew-Bold.ttf");
 }
