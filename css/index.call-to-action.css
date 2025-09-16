@@ -1,7 +1,7 @@
 .cta {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../img/call-to-action/cta.png);
-  background-position: 50% 50%;
+  background-position: 50% 80%;
   background-size: cover;
   text-align: center;
   display: flex;
@@ -33,6 +33,14 @@
       color: var(--color-text-white);
       padding: 25px 0 30px;
       line-height: 1.1;
+
+      @media (min-width: 768px) {
+        font-size: 45px;
+      }
+
+      @media (min-width: 992px) {
+        font-size: 52px;
+      }
     }
 
     .cta__text-second {
@@ -43,24 +51,28 @@
     }
 
     .cta__btn-container {
-      background-color: var(--color-background-dark-gold);
-
-      font-size: 14.4px;
-      font-weight: 700;
-      font-family: "IBM Plex Sans", sans-serif;
-      width: 135px;
-      height: 66px;
       display: flex;
       justify-content: center;
       align-items: center;
-
-      &:hover {
-        background-color: var(--color-background-white);
-      }
+      cursor: pointer;
 
       .cta__btn {
-        color: var(--color-text-white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-background-dark-gold);
+        width: 135px;
+        height: 66px;
+        font-size: 15.4px;
+        font-weight: 700;
+        font-family: "IBM Plex Sans", sans-serif;
         text-decoration: none;
+        color: var(--color-text-white);
+
+        &:hover {
+          background-color: var(--color-background-white);
+          color: var(--text-primary);
+        }
       }
     }
   }
@@ -75,7 +87,7 @@
   align-items: center;
 
   .cta__image {
-    width: 242px;
-    height: 233px;
+    width: 60px;
+    height: 55px;
   }
 }

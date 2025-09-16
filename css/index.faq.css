@@ -1,0 +1,42 @@
+.faq {
+  background-color: var(--color-background-dark-сharcoal);
+  color: var(--color-text-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 90px 0;
+
+  .faq__header {
+    font-family: "Zen Kaku Gothic New Medium", sans-serif;
+    font-size: 38px;
+  }
+
+  .faq__btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 40px;
+
+    .faq__btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      border: 1px solid var(--color-text-white);
+      width: 113px;
+      height: 55px;
+      font-size: 14px;
+      font-weight: normal;
+      font-family: "IBM Plex Sans", sans-serif;
+      text-decoration: none;
+      color: var(--color-text-white);
+
+      &:hover {
+        background-color: var(--color-background-white);
+        color: var(--text-primary);
+      }
+    }
+  }
+}
