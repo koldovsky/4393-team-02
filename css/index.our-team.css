@@ -4,13 +4,13 @@ body,
 html {
     margin: 0;
     padding: 0;
-    background: #ffffff;
+    background: var(--color-background-white);
     font-family: "IBM Plex Sans", sans-serif;
 }
 
 .our-team__general-header {
     font-family: "Zen Kaku Gothic New", sans-serif;
-    color: rgb(58, 58, 58);
+    color: var(--color-text-eclipse);
     font-size: 34px;
     text-align: center;
     margin: 40px 10px 20px;
@@ -42,7 +42,7 @@ html {
 
 .our-team__visibility-button button {
     font-family: "Zen Kaku Gothic New", sans-serif;
-    color: rgb(133, 133, 133);
+    color: var(--color-text-gray);
     font-size: 21px;
     font-weight: 600;
     background: transparent;
@@ -60,7 +60,7 @@ html {
     left: 50%;
     height: 2px;
     width: 0;
-    background: rgb(43, 43, 43);
+    background: var(--color-text-secondary);
     transition: width 0.3s ease, left 0.3s ease;
 }
 
