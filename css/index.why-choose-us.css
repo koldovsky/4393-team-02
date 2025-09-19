@@ -1,0 +1,18 @@
+.why-choose-us__icon {
+  width: 64px;
+  height: 64px;
+  max-width: 100%;
+  display: block;
+}
+
+.why-choose-us__item {
+  display: flex;
+  align-items: flex-start; /* вирівнює по верхньому краю */
+  gap: 12px; /* відступ між іконкою та текстом */
+}
+
+.why-choose-us__icon {
+  flex: 0 0 64px; /* фіксована ширина */
+  height: 64px;
+  object-fit: contain;
+}git add .
