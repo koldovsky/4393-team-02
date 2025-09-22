@@ -1,11 +1,3 @@
-:root {
-  --color-primary: #a76d39; /* кнопка */
-  --color-primary-hover: #8a572e;
-  --color-bg: #ffffff;
-  --color-text: #333333;
-  --color-border: #dddddd;
-}
-
 .quote {
   display: flex;
   flex-direction: column;
