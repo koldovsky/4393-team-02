@@ -18,6 +18,7 @@
   --color-text-highlight: #b07f4c;
   --color-text-gray-secondary: #847868;
   --color-text-christmas-silver: #b5b5b5;
+  --color-text-dark-gray: #333333;
 
   --color-background-grey: #ededed;
   --color-background-light: #f3f3f3;
@@ -35,8 +36,11 @@
   --color-border-light: rgba(255, 255, 255, 0.2);
   --color-border-dark-gold: #b07f4c;
   --color-border-very-light-gray: #eee;
+  --color-border-light-gray: #dddddd;
 
   --color-icon: #ffffff;
+  --color-primary: #a76d39;
+  --color-primary-hover: #8a572e;
 
   --shadow-elev-1: 0 1px 6px 1px rgba(145, 153, 171, 0.3);
   --color-shadow-very-light-transparent-black: rgba(0, 0, 0, 0.08);
