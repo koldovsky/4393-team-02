@@ -12,7 +12,7 @@
     font-family: "Zen Kaku Gothic New", sans-serif;
     font-size: 38px;
     padding-bottom: 50px;
-    font-weight: normal;
+    font-weight: bold;
 
     @media (min-width: 768px) {
       font-size: 45px;
@@ -23,23 +23,10 @@
     }
   }
 
-  .faq__accordion {
+  .accordion {
     padding: 0 24px;
 
-    .faq__accordion-header {
-      font-family: "Zen Kaku Gothic New", sans-serif;
-      font-size: 22px;
-
-      @media (min-width: 768px) {
-        font-size: 24px;
-      }
-
-      @media (min-width: 992px) {
-        font-size: 26px;
-      }
-    }
-
-    .accordion-body {
+    .accordion-collapse {
       font-family: "IBM Plex Sans", sans-serif;
       font-size: 17px;
     }
@@ -72,4 +59,90 @@
       }
     }
   }
+}
+
+/* FAQ section */
+.faq {
+  color: #fff;
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.faq__header {
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+/* Контейнер акордеона */
+.faq .accordion {
+  background: transparent;
+  border: none;
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Кожен пункт */
+.faq .accordion-item {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Заголовок */
+.faq .accordion-button {
+  background: transparent;
+  color: #fff;
+  font-weight: 500;
+  box-shadow: none;
+  border: none;
+  padding: 15px 0;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 22px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 26px;
+  }
+}
+
+/* При натисканні */
+.faq .accordion-button:not(.collapsed) {
+  color: #fff;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Вимикаємо дефолтну Bootstrap іконку */
+.faq .accordion-button::after {
+  display: none;
+}
+
+/* Додаємо свою іконку */
+.faq .accordion-button::before {
+  content: "+";
+  font-weight: bold;
+  color: #fff;
+  transition: transform 0.2s, content 0.2s;
+}
+
+.faq .accordion-button:not(.collapsed)::before {
+  content: "–"; /* мінус при відкритті */
+}
+
+/* Текст усередині */
+.faq .accordion-body {
+  font-family: "IBM Plex Sans", sans-serif;
+  padding: 0 0 15px 0;
+  color: #eee;
 }
