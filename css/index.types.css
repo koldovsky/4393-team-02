@@ -12,13 +12,34 @@
     }
 
     .types__card__body {
+      display: grid;
+      align-content: space-evenly;
       padding: 24px;
+
+      .types__card__body__price {
+        letter-spacing: 1px;
+        font-family: "IBM Plex Sans Light";
+        font-size: 14px;
+        color: var(--color-text-gray);
+      }
+
+      .types__card__body__label {
+        font-size: 26px;
+        font-family: "IBM Plex Sans Regular";
+      }
 
       .types__card__body__divider {
         width: 33px;
       }
 
+      p {
+        font-size: 18px;
+        color: var(--color-text-gray);
+        font-family: "IBM Plex Sans Light";
+      }
+
       .types__card__body__button {
+        width: fit-content;
         text-decoration: none;
         display: inline-flex;
         align-items: center;
@@ -65,16 +86,20 @@
 @media (max-width: 719px) {
   #types {
     display: grid;
-  }
 
-  .types__card {
-    display: grid;
-    width: 100%;
-  }
+    .types__card {
+      display: grid;
+      width: 100%;
 
-  .types__card__image {
-    width: 100%;
-    height: 300px;
+      .types__card__image {
+        width: 100%;
+        height: 300px;
+      }
+
+      .types__card__body {
+        gap: 12px;
+      }
+    }
   }
 }
 
@@ -82,20 +107,23 @@
   #types {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-  }
+    .types__card {
+      display: grid;
+      width: 100%;
 
-  .types__card {
-    display: grid;
-    width: 100%;
+      .types__card__image {
+        width: 100%;
+        height: 300px;
+      }
+
+      .types__card__body {
+        gap: 12px;
+      }
+    }
   }
 
   .types__card--full-width {
     grid-column: 1 / -1;
-  }
-
-  .types__card__image {
-    width: 100%;
-    height: 300px;
   }
 }
 
@@ -103,20 +131,20 @@
   #types {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .types__card {
-    display: flex;
-    width: 100%;
+    
+    .types__card {
+      display: flex;
+      width: 100%;
+      
+      .types__card__image,
+      .types__card__body {
+        width: 50%;
+        height: 400px;
+      }
+    }
   }
 
   .types__card--full-width {
     grid-column: 1 / -1;
-  }
-
-  .types__card__image,
-  .types__card__body {
-    width: 50%;
-    height: 400px;
   }
 }
