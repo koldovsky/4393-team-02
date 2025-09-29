@@ -1,3 +1,9 @@
+let productsData = [];
+let productsRendered = 0;
+let productsPerClick = 6;
+
+const showMoreBtn = document.querySelector(".products__more-btn");
+
 async function initProducts() {
     try {
         const res = await fetch('../data.json');
@@ -13,7 +19,7 @@ async function initProducts() {
 
 async function initCategories() {
     try {
-        const res = await fetch('../data.json');
+        const res = await fetch('./db.json');
         const data = await res.json();
 
         return data.categories;   
@@ -26,15 +32,16 @@ async function initCategories() {
 
 function renderProducts(products) {
     const productsList = document.querySelector(".products__list");
+
     if (!productsList) return;
 
-    productsList.innerHTML = '';
+    const productsToShow = products.slice(productsRendered, productsRendered + productsPerClick);
 
-    products.forEach(product => {
+    productsToShow.forEach(product => {
         const oldPrice = Number(product.price.old).toFixed(2);
         const newPrice = Number(product.price.new).toFixed(2);
 
-        let htmlOfPriceBlock = ''; 
+        let htmlOfPriceBlock = ""; 
         if (newPrice !== oldPrice) {
             htmlOfPriceBlock = `
                 <p class="product__price-old">$${oldPrice} USD</p>
@@ -50,10 +57,13 @@ function renderProducts(products) {
         if (product.isLimited) badges.push("Limited");
         if (product.isBestseller) badges.push("Bestseller");
 
-        let htmlOfBadges = badges.map(badge => {
-            `<span class="product__badge">${badge}</span>`
-        }).join("");
-
+        let htmlOfBadges = "";
+        for (let i = 0; i < badges.length; i++) {
+            htmlOfBadges += `
+                <span class="product__badge">${badges[i]}</span>
+            ` 
+        }
+        
         productsList.innerHTML += `
             <article class="products__item product">
                 <a href="#" class="product__link">
@@ -74,7 +84,19 @@ function renderProducts(products) {
             </article>
         `;
     });
+
+    productsRendered += productsPerClick;
+
+    if (productsRendered >= products.length && showMoreBtn) {
+        showMoreBtn.style.display = "none";
+    }
 }
 
 const products = await initProducts();
 renderProducts(products);
+
+if (showMoreBtn) {
+    showMoreBtn.addEventListener("click", () => {
+        renderProducts(products);
+    });
+}
