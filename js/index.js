@@ -1,5 +1,6 @@
 function init() {
     import('./index.about-us.js');
+    import('./index.catalog.js');
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
