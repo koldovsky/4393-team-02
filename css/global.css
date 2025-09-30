@@ -110,6 +110,10 @@ img {
   src: url("../fonts/Zen_Kaku_Gothic_New/ZenKakuGothicNew-Bold.ttf");
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 .no-scroll {
   overflow: hidden;
 }
