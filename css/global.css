@@ -109,3 +109,7 @@ img {
   font-family: "Zen Kaku Gothic New Bold";
   src: url("../fonts/Zen_Kaku_Gothic_New/ZenKakuGothicNew-Bold.ttf");
 }
+
+.no-scroll {
+  overflow: hidden;
+}
