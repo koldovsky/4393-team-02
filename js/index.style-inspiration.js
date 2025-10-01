@@ -5,18 +5,18 @@ cards.forEach((card) => {
   card.addEventListener("click", () => {
     const modalId = card.getAttribute("data-modal");
     const modal = document.getElementById(modalId);
-    modal.style.display = "flex";
+    modal.classList.add("show");
   });
 });
 
 closeBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
-    btn.closest(".inspiration__modal").style.display = "none";
+    btn.closest(".inspiration__modal").classList.remove("show");
   });
 });
 
 window.addEventListener("click", (e) => {
   if (e.target.classList.contains("inspiration__modal")) {
-    e.target.style.display = "none";
+    e.target.classList.remove("show");
   }
 });
