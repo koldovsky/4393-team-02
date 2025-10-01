@@ -81,6 +81,7 @@
   margin-left: 15px;
   margin-right: 15px;
   position: relative;
+  cursor: pointer;
 }
 
 .inspiration__item-image {
@@ -89,13 +90,15 @@
   object-fit: cover;
 }
 
-.inspiration__item-title {
+.inspiration__item-title,
+.inspiration__modal-title {
   font-family: "Zen Kaku Gothic New Regular", sans-serif;
   font-size: 26px;
   color: var(--color-text-secondary);
 }
 
-.inspiration__item-description {
+.inspiration__item-description,
+.inspiration__modal-description {
   font-family: "IBM Plex Sans Medium", sans-serif;
   font-size: 15px;
   color: var(--color-text-gray);
@@ -199,4 +202,66 @@
 
 .inspiration__offer-bulletpoint {
   color: var(--color-text-highlight);
+}
+
+.inspiration__modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.inspiration__modal-content {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  max-width: 500px;
+  width: 90%;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inspiration__modal-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.inspiration__modal-title {
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.inspiration__modal-description {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.inspiration__modal-close {
+  position: absolute;
+  top: -30px;
+  right: -50px;
+  font-size: 50px; /* збільшуємо */
+  font-weight: bold;
+  color: #bebebe;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.inspiration__modal-close:hover {
+  color: #ff0000; /* зміна кольору при наведенні */
+}
+
+.inspiration__modal-close {
+  cursor: pointer;
 }
