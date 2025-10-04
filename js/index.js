@@ -3,6 +3,7 @@ function init() {
   import("./index.catalog.js");
   import("./global.header-burger.js");
   import("./index.style-inspiration.js");
+  import("./gallery-modal.js");
 }
 
 const totalPartials = document.querySelectorAll(
