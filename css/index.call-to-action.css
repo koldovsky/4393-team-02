@@ -99,3 +99,76 @@
 .carousel-control-next-icon {
   filter: invert(1); /* робить стрілки білі */
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: brightness(0) invert(1); /* робить стрілки повністю білі */
+}
+
+/* Базові стилі */
+.cta__slideshow-container {
+  background: #333;
+  padding: 30px 0;
+  position: relative;
+}
+
+.carousel-inner {
+  overflow: hidden; /* Головне: обрізає те, що не влазить */
+}
+
+.carousel-item {
+  overflow: hidden; /* Страховка: теж обрізає зайве */
+}
+
+.carousel-item .d-flex {
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta__image {
+  width: 242px;
+  height: 233px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* ===== Адаптив ===== */
+
+/* До 991px — 3 зображення */
+@media (max-width: 991px) {
+  .cta__image {
+    width: 30%;
+  }
+}
+
+/* До 768px — 2 зображення */
+@media (max-width: 768px) {
+  .cta__image {
+    width: 45%;
+  }
+}
+
+/* До 576px — тільки 1 зображення */
+@media (max-width: 576px) {
+  .carousel-item {
+    display: flex;
+    justify-content: center;
+    overflow: hidden; /* обрізає половинки */
+  }
+
+  .carousel-item .d-flex {
+    display: block;
+    text-align: center;
+  }
+
+  .cta__image {
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-item .cta__image:first-child {
+    display: inline-block;
+  }
+}
