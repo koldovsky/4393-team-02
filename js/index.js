@@ -4,6 +4,7 @@ function init() {
   import("./global.header-burger.js");
   import("./index.style-inspiration.js");
   import("./gallery-modal.js");
+  import("./latest-news.js");
 }
 
 const totalPartials = document.querySelectorAll(
