@@ -6,7 +6,7 @@
             "old": 185.00,
             "new": 185.00
         },
-        "photo": "./images/catalog/tufted-geometric-rug.png",
+        "photo": "./img/catalog/tufted-geometric-rug.png",
         "category": "textiles-soft-tones",
         "color": ["beige"],
         "material": ["cotton"],
@@ -24,7 +24,7 @@
             "old": 18.00,
             "new": 15.00
         },
-        "photo": "./images/catalog/decorative-pillow-set.png",
+        "photo": "./img/catalog/decorative-pillow-set.png",
         "category": "textiles-soft-tones",
         "color": ["beige"],
         "material": ["wool"],
@@ -42,7 +42,7 @@
             "old": 74.00,
             "new": 74.00
         },
-        "photo": "./images/catalog/woven-pouf.png",
+        "photo": "./img/catalog/woven-pouf.png",
         "category": "textiles-soft-tones",
         "color": ["terracotta"],
         "material": ["cotton"],
@@ -60,7 +60,7 @@
             "old": 59.00,
             "new": 59.00
         },
-        "photo": "./images/catalog/chunky-knit-blanket.png",
+        "photo": "./img/catalog/chunky-knit-blanket.png",
         "category": "textiles-soft-tones",
         "color": ["white"],
         "material": ["jute-blend"],
@@ -78,7 +78,7 @@
             "old": 28.00,
             "new": 15.00
         },
-        "photo": "./images/catalog/wooden-wall-sconce-set.png",
+        "photo": "./img/catalog/wooden-wall-sconce-set.png",
         "category": "wall-decor",
         "color": ["terracotta"],
         "material": ["cotton"],
@@ -96,7 +96,7 @@
             "old": 11.00,
             "new": 11.00
         },
-        "photo": "./images/catalog/abstract-wall-canvas.png",
+        "photo": "./img/catalog/abstract-wall-canvas.png",
         "category": "wall-decor",
         "color": ["white"],
         "material": ["cotton"],
@@ -114,7 +114,7 @@
             "old": 17.00,
             "new": 17.00
         },
-        "photo": "./images/catalog/macrame-wall-hanging.png",
+        "photo": "./img/catalog/macrame-wall-hanging.png",
         "category": "wall-decor",
         "color": ["terracotta"],
         "material": ["tufted-fabric"],
@@ -132,7 +132,7 @@
             "old": 18.00,
             "new": 18.00
         },
-        "photo": "./images/catalog/woven-wall-mirror.png",
+        "photo": "./img/catalog/woven-wall-mirror.png",
         "category": "wall-decor",
         "color": ["white"],
         "material": ["wool"],
@@ -150,7 +150,7 @@
             "old": 8.00,
             "new": 5.00
         },
-        "photo": "./images/catalog/brass-candle-holder.png",
+        "photo": "./img/catalog/brass-candle-holder.png",
         "category": "home-accents",
         "color": ["beige"],
         "material": ["jute-blend"],
@@ -168,7 +168,7 @@
             "old": 10.00,
             "new": 10.00
         },
-        "photo": "./images/catalog/geometric-ceramic-vase.png",
+        "photo": "./img/catalog/geometric-ceramic-vase.png",
         "category": "home-accents",
         "color": ["white"],
         "material": ["jute-blend"],
@@ -186,7 +186,7 @@
             "old": 25.00,
             "new": 20.00
         },
-        "photo": "./images/catalog/ceramic-horse-figurine.jpeg",
+        "photo": "./img/catalog/ceramic-horse-figurine.jpeg",
         "category": "home-accents",
         "color": ["beige"],
         "material": ["tufted-fabric"],
@@ -204,7 +204,7 @@
             "old": 15.00,
             "new": 15.00
         },
-        "photo": "./images/catalog/round-wooden-tray.png",
+        "photo": "./img/catalog/round-wooden-tray.png",
         "category": "home-accents",
         "color": ["black"],
         "material": ["cotton"],
@@ -222,7 +222,7 @@
             "old": 4.00,
             "new": 4.00
         },
-        "photo": "./images/catalog/clay-cup-candle.png",
+        "photo": "./img/catalog/clay-cup-candle.png",
         "category": "home-accents",
         "color": ["black"],
         "material": ["jute-blend"],
@@ -240,7 +240,7 @@
             "old": 31.00,
             "new": 31.00
         },
-        "photo": "./images/catalog/wooden-floating-shelf.png",
+        "photo": "./img/catalog/wooden-floating-shelf.png",
         "category": "wall-decor",
         "color": ["black"],
         "material": ["jute-blend"],
