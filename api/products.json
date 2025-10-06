@@ -1,0 +1,254 @@
+[
+    {
+        "id": "product1",
+        "name": "Tufted Geometric Rug",
+        "price": {
+            "old": 185.00,
+            "new": 185.00
+        },
+        "photo": "./images/catalog/tufted-geometric-rug.png",
+        "category": "textiles-soft-tones",
+        "color": ["beige"],
+        "material": ["cotton"],
+        "style": ["modern"],
+        "usage": ["living-room"],
+        "isNew": false,
+        "isBestseller": false,
+        "isOnSale": false,
+        "isLimited": false
+    },
+    {
+        "id": "product2",
+        "name": "Decorative Pillow Set",
+        "price": {
+            "old": 18.00,
+            "new": 15.00
+        },
+        "photo": "./images/catalog/decorative-pillow-set.png",
+        "category": "textiles-soft-tones",
+        "color": ["beige"],
+        "material": ["wool"],
+        "style": ["abstract"],
+        "usage": ["hallway"],
+        "isNew": false,
+        "isBestseller": true,
+        "isOnSale": false,
+        "isLimited": false
+    },
+    {
+        "id": "product3",
+        "name": "Woven Pouf",
+        "price": {
+            "old": 74.00,
+            "new": 74.00
+        },
+        "photo": "./images/catalog/woven-pouf.png",
+        "category": "textiles-soft-tones",
+        "color": ["terracotta"],
+        "material": ["cotton"],
+        "style": ["modern"],
+        "usage": ["bedroom"],
+        "isNew": false,
+        "isBestseller": true,
+        "isOnSale": false,
+        "isLimited": false
+    },
+    {
+        "id": "product4",
+        "name": "Chunky Knit Blanket",
+        "price": {
+            "old": 59.00,
+            "new": 59.00
+        },
+        "photo": "./images/catalog/chunky-knit-blanket.png",
+        "category": "textiles-soft-tones",
+        "color": ["white"],
+        "material": ["jute-blend"],
+        "style": ["boho"],
+        "usage": ["entryway"],
+        "isNew": false,
+        "isBestseller": false,
+        "isOnSale": false,
+        "isLimited": false
+    },
+    {
+        "id": "product5",
+        "name": "Wooden Wall Sconce Set",
+        "price": {
+            "old": 28.00,
+            "new": 15.00
+        },
+        "photo": "./images/catalog/wooden-wall-sconce-set.png",
+        "category": "wall-decor",
+        "color": ["terracotta"],
+        "material": ["cotton"],
+        "style": ["minimalist"],
+        "usage": ["entryway"],
+        "isNew": false,
+        "isBestseller": false,
+        "isOnSale": true,
+        "isLimited": false
+    },
+    {
+        "id": "product6",
+        "name": "Abstract Wall Canvas",
+        "price": {
+            "old": 11.00,
+            "new": 11.00
+        },
+        "photo": "./images/catalog/abstract-wall-canvas.png",
+        "category": "wall-decor",
+        "color": ["white"],
+        "material": ["cotton"],
+        "style": ["boho"],
+        "usage": ["hallway"],
+        "isNew": false,
+        "isBestseller": false,
+        "isOnSale": false,
+        "isLimited": false
+    },
+    {
+        "id": "product7",
+        "name": "Macrame Wall Hanging",
+        "price": {
+            "old": 17.00,
+            "new": 17.00
+        },
+        "photo": "./images/catalog/macrame-wall-hanging.png",
+        "category": "wall-decor",
+        "color": ["terracotta"],
+        "material": ["tufted-fabric"],
+        "style": ["abstract"],
+        "usage": ["bedroom"],
+        "isNew": true,
+        "isBestseller": false,
+        "isOnSale": false,
+        "isLimited": false
+    },
+    {
+        "id": "product8",
+        "name": "Woven Wall Mirror",
+        "price": {
+            "old": 18.00,
+            "new": 18.00
+        },
+        "photo": "./images/catalog/woven-wall-mirror.png",
+        "category": "wall-decor",
+        "color": ["white"],
+        "material": ["wool"],
+        "style": ["abstract"],
+        "usage": ["hallway"],
+        "isNew": false,
+        "isBestseller": false,
+        "isOnSale": false,
+        "isLimited": false
+    },
+    {
+        "id": "product9",
+        "name": "Brass Candle Holder",
+        "price": {
+            "old": 8.00,
+            "new": 5.00
+        },
+        "photo": "./images/catalog/brass-candle-holder.png",
+        "category": "home-accents",
+        "color": ["beige"],
+        "material": ["jute-blend"],
+        "style": ["minimalist"],
+        "usage": ["entryway"],
+        "isNew": false,
+        "isBestseller": false,
+        "isOnSale": true,
+        "isLimited": false
+    },
+    {
+        "id": "product10",
+        "name": "Geometric Ceramic Vase",
+        "price": {
+            "old": 10.00,
+            "new": 10.00
+        },
+        "photo": "./images/catalog/geometric-ceramic-vase.png",
+        "category": "home-accents",
+        "color": ["white"],
+        "material": ["jute-blend"],
+        "style": ["abstract"],
+        "usage": ["bedroom"],
+        "isNew": false,
+        "isBestseller": false,
+        "isOnSale": false,
+        "isLimited": true
+    },
+    {
+        "id": "product11",
+        "name": "Ceramic Horse Figurine",
+        "price": {
+            "old": 25.00,
+            "new": 20.00
+        },
+        "photo": "./images/catalog/ceramic-horse-figurine.jpeg",
+        "category": "home-accents",
+        "color": ["beige"],
+        "material": ["tufted-fabric"],
+        "style": ["minimalist"],
+        "usage": ["bedroom"],
+        "isNew": false,
+        "isBestseller": false,
+        "isOnSale": true,
+        "isLimited": false
+    },
+    {
+        "id": "product12",
+        "name": "Round Wooden Tray",
+        "price": {
+            "old": 15.00,
+            "new": 15.00
+        },
+        "photo": "./images/catalog/round-wooden-tray.png",
+        "category": "home-accents",
+        "color": ["black"],
+        "material": ["cotton"],
+        "style": ["modern"],
+        "usage": ["living-room"],
+        "isNew": false,
+        "isBestseller": false,
+        "isOnSale": false,
+        "isLimited": false
+    },
+    {
+        "id": "product13",
+        "name": "Clay Cup Candle",
+        "price": {
+            "old": 4.00,
+            "new": 4.00
+        },
+        "photo": "./images/catalog/clay-cup-candle.png",
+        "category": "home-accents",
+        "color": ["black"],
+        "material": ["jute-blend"],
+        "style": ["modern"],
+        "usage": ["hallway"],
+        "isNew": false,
+        "isBestseller": false,
+        "isOnSale": false,
+        "isLimited": false
+    },
+    {
+        "id": "product14",
+        "name": "Wooden Floating Shelf",
+        "price": {
+            "old": 31.00,
+            "new": 31.00
+        },
+        "photo": "./images/catalog/wooden-floating-shelf.png",
+        "category": "wall-decor",
+        "color": ["black"],
+        "material": ["jute-blend"],
+        "style": ["modern"],
+        "usage": ["hallway"],
+        "isNew": false,
+        "isBestseller": false,
+        "isOnSale": false,
+        "isLimited": false
+    }
+]

@@ -1,0 +1,30 @@
+{
+    "all": {
+        "price": { "min": 4, "max": 185 },
+        "colors": ["beige", "black", "terracotta", "white"],
+        "materials": ["cotton", "jute-blend", "tufted-fabric", "wool"],
+        "styles": ["abstract", "boho", "minimalist", "modern"],
+        "usage": ["bedroom", "entryway", "hallway", "living-room"]
+    },
+    "textiles-soft-tones": {
+        "price": { "min": 15, "max": 185 },
+        "colors": ["beige", "terracotta", "white"],
+        "materials": ["cotton", "jute-blend", "wool"],
+        "styles": ["abstract", "boho", "modern"],
+        "usage": ["bedroom", "entryway", "hallway", "living-room"]
+    },
+    "home-accents": {
+        "price": { "min": 4, "max": 20 },
+        "colors": ["beige", "black", "white"],
+        "materials": ["cotton", "jute-blend", "tufted-fabric"],
+        "styles": ["abstract", "minimalist", "modern"],
+        "usage": ["bedroom", "entryway", "hallway", "living-room"]
+    },
+    "wall-decor": {
+        "price": { "min": 11, "max": 18 },
+        "colors": ["terracotta", "white"],
+        "materials": ["cotton", "tufted-fabric", "wool"],
+        "styles": ["abstract", "boho", "minimalist"],
+        "usage": ["bedroom", "entryway", "hallway"]
+    }
+}

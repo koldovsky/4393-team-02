@@ -162,11 +162,15 @@
         .filters__section {
             cursor: pointer;
             width: 100%;
+            height: 76.5px;
             padding: 24px 0;
             display: flex;
             flex-direction: column;
             border-top: 1px solid var(--color-border-light);
-            
+        }
+
+        .filters__section-active {
+            height: auto;
         }
 
         .filters__header {
@@ -187,13 +191,27 @@
             width: 24px;
             height: 24px;
             transform: rotate(0deg);
-            transition: 0.2s ease-in;
+            transition: transform 0.5s ease;
             fill: var(--color-icon);
+        }
+
+        .filters__header-icon-active {
+            transform: rotate(-180deg);
         }
 
         .filters__content {
             width: 100%;
+            opacity: 0;
+            overflow: hidden;
+            transform: scaleY(0);    
+            transform-origin: top;                             
+            transition: transform 0.5s ease, opacity 0.5s ease, margin 0.5s ease;
+        }
+
+        .filters__content-active {
+            opacity: 1;
             margin-top: 16px;
+            transform: scaleY(1);   
         }
 
         .filters__list {
@@ -276,7 +294,7 @@
         .filters__slider--track {
             position: absolute;
             left: 0;
-            top: 0;
+            top: 6px;
             width: 100%;
             height: 4px;
             background-color: var(--color-background-white);
@@ -284,15 +302,14 @@
 
         .filters__slider--active {
             position: absolute;
-            top: 0;
-            width: 100%;
+            top: 6px;
             height: 4px;
             background-color: var(--color-background-dark-gold);
         }
 
         .filters__slider--thumb {
             position: absolute;
-            top: -6px;
+            top: 0;
             width: 16px;
             height: 16px;
             border-radius: 50%;
@@ -304,17 +321,20 @@
         }
 
         .filters__slider--thumb-max {
-            right: 0;
+            left: 100%;
         }
 
         .filters__slider--input {
             position: absolute;
             inset: 0;
+            top: 5px;
+            margin: 0;
+            z-index: 2;
             opacity: 0;  
-            width: 100%;
+            width: auto;
             height: 4px;        
             appearance: none;    
-            pointer-events: all;          
+            pointer-events: all;           
         }
 
         .filters__values {

@@ -36,7 +36,6 @@
           <button
             type="button"
             class="filters__toggle-inner"
-            data-hx-on:click="document.querySelector('.filters-modal').style.display = 'flex'"
           >
             <svg
               width="24"
@@ -62,7 +61,7 @@
           <h3 class="filters__title">Filters</h3>
 
           <form action="#" class="filters__form" method="get">
-            <div class="filters__section">
+            <div class="filters__section filters__section-active">
               <div class="filters__header">
                 <span class="filters__header-text">Category</span>
 
@@ -72,7 +71,7 @@
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  class="filters__header-icon"
+                  class="filters__header-icon filters__header-icon-active"
                 >
                   <path
                     fill-rule="evenodd"
@@ -83,7 +82,7 @@
                 </svg>
               </div>
 
-              <div class="filters__content">
+              <div class="filters__content filters__content-active">
                 <ul class="filters__list">
                   <li class="filters__item">
                     <label class="filters__label" for="category-all">
@@ -143,7 +142,7 @@
               </div>
             </div>
 
-            <div class="filters__section">
+            <div class="filters__section filters__section-active">
               <div class="filters__header">
                 <span class="filters__header-text">Price</span>
 
@@ -153,7 +152,7 @@
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  class="filters__header-icon"
+                  class="filters__header-icon filters__header-icon-active"
                 >
                   <path
                     fill-rule="evenodd"
@@ -164,7 +163,7 @@
                 </svg>
               </div>
 
-              <div class="filters__content">
+              <div class="filters__content filters__content-active">
                 <div class="filters__slider">
                   <div class="filters__slider--track"></div>
                   <div class="filters__slider--active"></div>
@@ -523,30 +522,12 @@
 
       <section class="catalog__products products">
         <div class="products__applied applied-filters">
-          <div class="applied-filters__item">
-            <span class="applied-filters__label">Price: </span>
-            <span class="applied-filters__value">&nbsp;9,66 - 185,00</span>
-            <button class="applied-filters__close">
-              <svg
-                width="12"
-                height="12"
-                viewBox="0 0 12 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="applied-filters__close-icon"
-              >
-                <path
-                  d="M9.85 9.15C10.05 9.35 10.05 9.65 9.85 9.85C9.75 9.95 9.65 10 9.5 10C9.35 10 9.25 9.95 9.15 9.85L6 6.7L2.85 9.85C2.65 10.05 2.35 10.05 2.15 9.85C2.05 9.75 2 9.65 2 9.5C2 9.35 2.05 9.25 2.15 9.15L5.3 6L2.15 2.85C1.95 2.65 1.95 2.35 2.15 2.15C2.35 1.95 2.65 1.95 2.85 2.15L6 5.3L9.15 2.15C9.35 1.95 9.65 1.95 9.85 2.15C10.05 2.35 10.05 2.65 9.85 2.85L6.7 6L9.85 9.15Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </button>
-          </div>
 
-          <button class="applied-filters__clear">Clear all</button>
         </div>
 
-        <div class="products__list"></div>
+        <div class="products__list">
+          
+        </div>
 
         <button class="products__more-btn">Load More</button>
       </section>
