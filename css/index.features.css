@@ -9,20 +9,20 @@
 .features .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /* ПК: текст зліва, картинка справа */
   gap: 40px;
   padding: 0 80px;
 }
 
 .features__content {
-  position: relative;
-  z-index: 1;
-  flex: 1;
-  max-width: 50%;
-  padding-left: 80px;
+  max-width: 45%;
+  padding-left: 0;
+  margin-left: calc(-10%); /* або -50px, як тобі зручніше */
 }
 
+
 .features__label {
+  font-family: "IBM Plex Sans Medium", sans-serif;
   font-size: 12px;
   letter-spacing: 2px;
   color: #ccc;
@@ -31,8 +31,9 @@
 }
 
 .features__title {
-  font-size: 36px;
-  font-weight: bold;
+  font-family: "Zen Kaku Gothic New Bold", sans-serif;
+  font-size: 42px;       /* розмір як у вебліумі */
+  font-weight: 700;
   margin-bottom: 15px;
   line-height: 1.2;
 }
@@ -42,12 +43,14 @@
 }
 
 .features__subtitle {
-  font-weight: bold;
+  font-family: "IBM Plex Sans SemiBold", sans-serif;
+  font-weight: 600;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
 .features__description {
+  font-family: "IBM Plex Sans Regular", sans-serif;
   margin-bottom: 25px;
   line-height: 1.6;
   color: #ddd;
@@ -66,6 +69,7 @@
 }
 
 .features__item {
+  font-family: "IBM Plex Sans Regular", sans-serif;
   margin-bottom: 10px;
   position: relative;
   padding-left: 20px;
@@ -80,6 +84,7 @@
 }
 
 .features__button {
+  font-family: "IBM Plex Sans Medium", sans-serif;
   display: inline-block;
   background-color: #b07f4c;
   color: #fff;
@@ -94,7 +99,7 @@
 }
 
 .features__image-container {
-  position: absolute; /* абсолютне позиціювання */
+  position: absolute; /* ПК: абсолютне позиціювання */
   top: 0;
   right: 0;
   bottom: 0;
@@ -109,32 +114,54 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: right 90%; /* зміщує “камеру” трохи вниз від самого верху */
+  object-position: right 90%; /* камера трохи нижче */
   border-radius: 0;
 }
 
-/* for phones */
+/* 📱 Mobile version */
 @media (max-width: 900px) {
+  .features {
+    padding: 100px 0 0; /* менше зверху, щоб картинка нижче */
+    position: relative;
+    overflow: hidden;
+  }
+
   .features .container {
     flex-direction: column;
-    padding: 0 40px;
+    padding: 0 30px;
     text-align: center;
   }
 
-  .features__content,
-  .features__image-container {
+  .features__content {
     max-width: 100%;
-    position: relative;
-    width: 100%;
-    height: auto;
+    text-align: left;
+    padding-left: 1px;  /* невеликий відступ зліва */
+    margin-left: 0;
   }
 
-  .features__image {
-    height: auto;
+  .features__button {
+    margin: 20px auto 0;
   }
 
   .features__list-wrapper {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; /* ліворуч для мобільних, як у вебліум */
+  }
+
+  .features__image-container {
+    position: relative;
+    width: 100vw;                  /* на всю ширину екрана */
+    height: calc(50vh - 100px);    /* займає всю нижню частину екрану */
+    margin-top: 20px;
+    overflow: hidden;
+  }
+
+  .features__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; /* камера трохи нижче верхнього краю */
+    border-radius: 0;
+    display: block;
   }
 }
