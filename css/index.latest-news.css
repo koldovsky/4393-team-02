@@ -1,115 +1,154 @@
-.latest-news{
-    background-color: #f9f9f9;
-    width: 100vw;
-    padding: 40px 16px;
+.latest-news {
+  background-color: var(--color-background-light-gray);
+  width: 100vw;
+  padding: 40px 16px;
+  box-sizing: border-box;
 
-    .latest-news__title{
-        text-align: center;
-        font-size: 11px;
-        font-weight: 400;
-        letter-spacing: 2.2px;
-        width: max-content;
-        display: block;
-        margin: 0 auto;
-        border: 1px solid #fff;
-        background-color: #fff;
-        text-transform: uppercase;
-        font-family: "IBM Plex Sans", sans-serif;
-        color: var(--color-text-gray);
+  .latest-news__title {
+    text-align: center;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 2.2px;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--color-text-gray);
+    text-transform: uppercase;
+    width: max-content;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid var(--color-border-white);
+    background-color: var(--color-background-white);
+  }
+
+  .latest-news__subtitle {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 500;
+    font-family: "Zen Kaku Gothic New Medium";
+    color: var(--text-primary);
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+  }
+
+  .latest-news__line {
+    text-align: center;
+  }
+
+  .latest-news__desc {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--color-text-gray);
+  }
+
+  .latest-news__list {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 16px;
+    background-color: var(--color-background-light-gray);
+    display: grid;
+    gap: 24px;
+    align-items: start;
+
+    @media (min-width: 482px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .latest-news__subtitle{
-        text-align: center;
-        font-size: 38px;
-        font-weight: 500;
-        display: block;
+    .latest-news__item {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--color-border-very-light-gray);
+      border-radius: 12px;
+      background: var(--color-background-white);
+      box-shadow: 0 8px 24px var(--color-shadow-very-light-transparent-black);
+      overflow: hidden;
+      height: 100%;
+
+      .latest-news__image {
+        position: relative;
         width: 100%;
-        max-width: none;
-        margin: 0 auto;
-        font-family: "Zen Kaku Gothic New Medium";
-        color: var(--text-primary);
-    }
+        aspect-ratio: 3 / 2;
+        overflow: hidden;
+        line-height: 0;
 
-    .latest-news__line{
-        text-align: center;
-    }
+        @media (min-width: 768px) {
+          aspect-ratio: 16 / 9;
+        }
+      }
 
-    .latest-news__desc{ 
-        text-align: center;
-        font-size: 19px;
-        font-weight: 500;
-        display: block;
+      .latest-news__image img {
+        position: absolute;
+        inset: 0;
         width: 100%;
-        max-width: none;
-        margin: 0 auto;
-        font-family: "IBM Plex Sans", sans-serif;
-        color: var(--color-text-gray);
-    }
+        height: 100%;
+        object-fit: cover;
+        border-radius: inherit;
+        display: block;
+      }
 
-    .latest-news__list{
-        background-color: var(--color-background-white);
+      .latest-news__content {
+        padding: 20px;
+        background: var(--color-background-white);
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
 
-        .latest-news__item{
-
-
-            .latest-news__image{
-                display: block;
-                max-width: 100%;
-            }
-
-            .latest-news__content{
-
-                .latest-news__date{
-                    text-align: left;
-                    font-size: 14px;
-                    font-weight: 500;
-                    font-family: "IBM Plex Sans", sans-serif;
-                    color: var(--color-text-gray);
-                    display: block;
-                }
-
-                .latest-news__heading{
-                    text-align: left;
-                    font-size: 22px;
-                    font-weight: 500;
-                    font-family: "Zen Kaku Gothic New Medium";
-                    color: var(--text-primary);
-                    display: block;
-
-                }
-
-                .latest-news__text{
-                    text-align: left;
-                    font-size: 17px;
-                    font-weight: 500;
-                    font-family: "IBM Plex Sans", sans-serif;
-                    color: var(--color-text-gray);
-                    display: block;
-                }
-
-                .latest-news__link.button{
-                    text-align: center;
-                    font-family: "IBM Plex Sans", sans-serif;
-                    font-size: 12.6px;
-                    font-weight: 700;
-                    color: var(--color-background-white);
-                    padding: 0 32 0 0px;
-                    border: 1px solid var(--color-text-highlight);
-                    background-color: var(--color-text-highlight);
-                    display: inline-block;
-                    text-decoration: none;
-
-                    &:hover {
-                        background-color: var(--color-text-secondary);
-                        color: var(--color-background-white);
-                        border-color: var(--color-text-secondary);
-                    }
-
-                }
-            }
+        .latest-news__date {
+          text-align: left;
+          font-size: 14px;
+          font-weight: 500;
+          font-family: "IBM Plex Sans", sans-serif;
+          color: var(--color-text-gray);
+          margin: 0 0 10px;
         }
 
+        .latest-news__heading {
+          text-align: left;
+          font-size: 22px;
+          font-weight: 500;
+          font-family: "Zen Kaku Gothic New Medium";
+          color: var(--text-primary);
+          margin: 8px 0 14px;
+        }
+
+        .latest-news__text {
+          text-align: left;
+          font-size: 17px;
+          font-weight: 500;
+          font-family: "IBM Plex Sans", sans-serif;
+          color: var(--color-text-gray);
+          margin: 0 0 18px;
+        }
+
+        .latest-news__link.button {
+          align-self: flex-start;
+          margin-top: auto;
+          text-align: center;
+          font-family: "IBM Plex Sans", sans-serif;
+          font-size: 12.6px;
+          font-weight: 700;
+          color: var(--color-text-white);
+          padding: 12px 24px;
+          border: 1px solid var(--color-background-dark-gold);
+          background-color: var(--color-border-dark-gold);
+          display: inline-block;
+          text-decoration: none;
+          transition: background 0.25s ease, border-color 0.25s ease,
+            color 0.25s ease;
+
+          &:hover {
+            background-color: var(--color-background-dark-сharcoal);
+            border-color: var(--color-background-charcoal);
+            color: var(--color-text-white);
+          }
+        }
+      }
     }
-
-
+  }
 }

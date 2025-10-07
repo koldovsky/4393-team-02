@@ -1,0 +1,148 @@
+.faq {
+  background-color: var(--color-background-dark-сharcoal);
+  color: var(--color-text-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 90px 0;
+  margin-top: -1px;
+
+  .faq__header {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 38px;
+    padding-bottom: 50px;
+    font-weight: bold;
+
+    @media (min-width: 768px) {
+      font-size: 45px;
+    }
+
+    @media (min-width: 992px) {
+      font-size: 52px;
+    }
+  }
+
+  .accordion {
+    padding: 0 24px;
+
+    .accordion-collapse {
+      font-family: "IBM Plex Sans", sans-serif;
+      font-size: 17px;
+    }
+  }
+
+  .faq__btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 60px;
+
+    .faq__btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      border: 1px solid var(--color-text-white);
+      width: 113px;
+      height: 55px;
+      font-size: 14px;
+      font-weight: normal;
+      font-family: "IBM Plex Sans", sans-serif;
+      text-decoration: none;
+      color: var(--color-text-white);
+
+      &:hover {
+        background-color: var(--color-background-white);
+        color: var(--text-primary);
+      }
+    }
+  }
+}
+
+/* FAQ section */
+.faq {
+  color: #fff;
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.faq__header {
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+/* Контейнер акордеона */
+.faq .accordion {
+  background: transparent;
+  border: none;
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Кожен пункт */
+.faq .accordion-item {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Заголовок */
+.faq .accordion-button {
+  background: transparent;
+  color: #fff;
+  font-weight: 500;
+  box-shadow: none;
+  border: none;
+  padding: 15px 0;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 22px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 26px;
+  }
+}
+
+/* При натисканні */
+.faq .accordion-button:not(.collapsed) {
+  color: #fff;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Вимикаємо дефолтну Bootstrap іконку */
+.faq .accordion-button::after {
+  display: none;
+}
+
+/* Додаємо свою іконку */
+.faq .accordion-button::before {
+  content: "+";
+  font-weight: bold;
+  color: #fff;
+  transition: transform 0.2s, content 0.2s;
+}
+
+.faq .accordion-button:not(.collapsed)::before {
+  content: "–"; /* мінус при відкритті */
+}
+
+/* Текст усередині */
+.faq .accordion-body {
+  font-family: "IBM Plex Sans", sans-serif;
+  padding: 0 0 15px 0;
+  color: #eee;
+}

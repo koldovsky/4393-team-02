@@ -1,0 +1,99 @@
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333; /* темний фон */
+  color: #fff;
+  padding: 60px 80px;
+  gap: 40px;
+}
+
+.features__content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.features__label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #ccc;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.features__title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.features__divider {
+  margin: 15px 0;
+}
+
+.features__subtitle {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.features__description {
+  margin-bottom: 25px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.features__list-wrapper {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 25px;
+}
+
+.features__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features__item {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.features__item::before {
+  content: "•";
+  color: #b07f4c;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.features__button {
+  display: inline-block;
+  background-color: #b07f4c;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.features__button:hover {
+  background-color: #91683b;
+}
+
+.features__image-container {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features__image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}

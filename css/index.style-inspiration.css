@@ -1,169 +1,216 @@
-
-.inspiration{
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: var(--color-background-white);
-    color: var(--text-primary);
-    text-align: center;
-    padding-top: 120px;
-    }
-
-    .inspiration__title{
-        display: inline-block;
-        color: var(--color-text-gray-secondary);
-        background-color: var(--color-background-light);
-        text-transform: uppercase;
-         font-family: 'IBM Plex Sans Light', sans-serif;
-         font-size: 11px;
-         letter-spacing: 3px;
+.inspiration {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--color-background-white);
+  color: var(--text-primary);
+  text-align: center;
+  padding-top: 120px;
 }
 
- .inspiration__text--subtitle{
-    margin-top: 20px;
-    font-size: 52px;
-    font-family: 'Zen Kaku Gothic New', sans-serif;
-    color: var(--color-text);
-    font-weight: bold;
- }
+.inspiration__title {
+  display: inline-block;
+  color: var(--color-text-gray-secondary);
+  background-color: var(--color-background-light);
+  text-transform: uppercase;
+  font-family: "IBM Plex Sans Light", sans-serif;
+  font-size: 11px;
+  letter-spacing: 3px;
+}
 
-  .inspiration__text--description{
-    font-size: 19px;
-    font-family: 'IBM Plex Sans Medium', sans-serif;
-    color: var(--color-text-gray);
- }
+.inspiration__text--subtitle {
+  margin-top: 20px;
+  font-size: 52px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  color: var(--text-primary);
+  font-weight: bold;
+}
 
- .inspiration__list{
-    max-width: 100%;
-    margin-top: 50px;
-    display: grid;  
-    gap: 5px;
+.inspiration__text--description {
+  font-size: 19px;
+  font-family: "IBM Plex Sans Medium", sans-serif;
+  color: var(--color-text-gray);
+}
 
-     @media (min-width: 480px){
+.inspiration__list {
+  max-width: 100%;
+  margin-top: 50px;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr;
+
+  @media (max-width: 479px) {
+    .inspiration__list-item:not(:first-child) {
+      margin-top: 100px;
+    }
+  }
+
+  @media (min-width: 480px) and (max-width: 991px) {
     grid-template-columns: 1fr 1fr;
- }
 
-   @media (min-width: 992px){
+    .inspiration__list-item {
+      margin-top: 0;
+    }
+
+    .inspiration__list-item:nth-child(3) {
+      margin-top: 100px;
+    }
+  }
+
+  @media (min-width: 992px) {
     grid-template-columns: repeat(3, 1fr);
- }  
- }
- 
- .inspiration__item-text-container{
-   max-width: 90%;
-   height: auto;
-   padding: 15px;
-   position: absolute;
-   left: 20px;
-   bottom: -80px;
-   background-color: var(--color-background-white);
- }
 
- .inspiration__list-item{
-   max-width: 100%;
-   height: auto;
-   margin: 0 15px;
-   position: relative;
- }
+    .inspiration__list-item {
+      margin-top: 0;
+    }
+  }
+}
 
- .inspiration__item-image{
-   width: 100%; 
-   height: 100%;
-    
-   object-fit: cover;
- }
+.inspiration__item-text-container {
+  max-width: 90%;
+  height: auto;
+  padding: 15px;
+  position: absolute;
+  left: 20px;
+  bottom: -80px;
+  background-color: var(--color-background-white);
+}
 
- .inspiration__item-title{
+.inspiration__list-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 100%;
+  height: auto;
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.inspiration__list-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.inspiration__item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.inspiration__item-title,
+.inspiration__modal-title {
   font-family: "Zen Kaku Gothic New Regular", sans-serif;
   font-size: 26px;
   color: var(--color-text-secondary);
- }
+}
 
- .inspiration__item-description{
-    font-family: "IBM Plex Sans Medium", sans-serif;
-    font-size: 15px;
-    color: var(--color-text-gray);
-    font-style: italic;
-    margin-top: 20px;
- }
+.inspiration__item-description,
+.inspiration__modal-description {
+  font-family: "IBM Plex Sans Medium", sans-serif;
+  font-size: 15px;
+  color: var(--color-text-gray);
+  font-style: italic;
+  margin-top: 20px;
+}
 
- .inspiration__text{
+.inspiration__text {
   margin-top: 130px;
   margin-bottom: 25px;
   font-family: "Zen Kaku Gothic New Medium", sans-serif;
   font-size: 32px;
   color: var(--text-primary);
- }
+}
 
- .inspiration__link{
+.inspiration__link {
+  display: inline-block;
+  padding: 5px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   font-family: "IBM Plex Sans Bold", sans-serif;
   color: var(--color-text-highlight);
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
- }
+}
 
- .inspiration__offer{
-  margin: 65px 15px 40px 15px; 
+.inspiration__link:hover {
+  text-decoration: none;
+  border-radius: 15px;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.inspiration__offer {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+  cursor: pointer;
+  margin: 65px 15px 40px 15px;
   max-width: 100%;
   background-color: var(--color-background-grey);
   display: flex;
   flex-direction: row;
 
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     flex-direction: column;
-     .inspiration__offer-text-container{
-    max-width: 100%;
- }
-  .inspiration__offer-image{
-  max-width: 100%;
- }
- }
- }
 
- .inspiration__offer-image{
+    .inspiration__offer-text-container {
+      max-width: 100%;
+    }
+
+    .inspiration__offer-image {
+      max-width: 100%;
+    }
+  }
+}
+
+.inspiration__offer:hover {
+  transform: scale(1.05);
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.inspiration__offer-image {
   max-width: 50%;
   object-fit: crop;
- }
+}
 
- .inspiration__offer-text-container{
-   max-width: 50%;
-   text-align: left;
-   padding: 60px 20px;
- }
+.inspiration__offer-text-container {
+  max-width: 50%;
+  text-align: left;
+  padding: 60px 20px;
+}
 
- .inspiration__offer-title{
+.inspiration__offer-title {
   margin-top: 20px;
   display: inline-block;
   background-color: var(--color-background-white);
-  font-family: 'IBM Plex Sans Regular', sans-serif;
+  font-family: "IBM Plex Sans Regular", sans-serif;
   color: var(--color-text-gray);
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 400;
- }
+}
 
- .inspiration__offer-subtitle{
+.inspiration__offer-subtitle {
   margin-top: 20px;
   color: var(--text-primary);
   font-family: "Zen Kaku Gothic New SemiBold", sans-serif;
   font-size: 32px;
- }
+}
 
- .inspiration__offer-subtitle--highlight{
+.inspiration__offer-subtitle--highlight {
   color: var(--color-text-highlight);
   font-family: "Zen Kaku Gothic New Bold", sans-serif;
- }
+}
 
- .inspiration__offer-text{
-  font-family: 'IBM Plex Sans Light', sans-serif;
+.inspiration__offer-text {
+  font-family: "IBM Plex Sans Light", sans-serif;
   font-size: 19px;
   color: var(--color-text-gray);
   font-weight: 600;
- }
+}
 
- .inspiration__offer-points{
+.inspiration__offer-points {
   margin-top: 25px;
-  font-family: 'IBM Plex Sans Light', sans-serif;
+  font-family: "IBM Plex Sans Light", sans-serif;
   font-weight: 300;
   font-size: 15px;
   padding-left: 0;
@@ -171,13 +218,88 @@
   list-style: none;
   font-weight: 600;
   letter-spacing: 0.5px;
- }
+}
 
- .inspiration__offer-point{
+.inspiration__offer-point {
   margin-bottom: 7px;
- }
+}
 
- .inspiration__offer-bulletpoint{
+.inspiration__offer-bulletpoint {
   color: var(--color-text-highlight);
- }
+}
 
+.inspiration__modal {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.inspiration__modal.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.inspiration__modal-content {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  max-width: 500px;
+  width: 90%;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+}
+
+.inspiration__modal.show .inspiration__modal-content {
+  transform: scale(1);
+}
+
+.inspiration__modal-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.inspiration__modal-title {
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.inspiration__modal-description {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.inspiration__modal-close {
+  position: absolute;
+  top: -30px;
+  right: -50px;
+  font-size: 50px;
+  font-weight: bold;
+  color: #bebebe;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.inspiration__modal-close:hover {
+  color: #ff0000;
+}
+
+.inspiration__modal-close {
+  cursor: pointer;
+}

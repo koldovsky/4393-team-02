@@ -10,17 +10,17 @@
   font-family: "Zen Kaku Gothic New Regular", sans-serif;
   font-size: 38px;
   font-weight: 600;
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
 }
 
 @media (min-width: 768px) {
-    .gallery__text {
+  .gallery__text {
     font-size: 45px;
   }
 }
 
 @media (min-width: 1024px) {
-    .gallery__text {
+  .gallery__text {
     font-size: 52px;
   }
 }
@@ -37,6 +37,12 @@
 
 .gallery__item {
   overflow: hidden;
+  border-radius: 16px;
+}
+
+.gallery__item:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
 
 .gallery__item img {
@@ -44,6 +50,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .gallery__item--large {
@@ -63,6 +70,81 @@
 
   .gallery__item img {
     height: auto;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: var(--color-background-model);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal.show {
+  display: flex;
+  opacity: 1;
+}
+
+.modal__content {
+  position: relative;
+  width: 80vw;
+  max-width: 900px;
+  aspect-ratio: 16 / 10;
+  background: var(--color-background-white);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: zoomIn 0.3s ease;
+}
+
+.modal__content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal__close {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-background-white-transparent);
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 22px;
+  color: var(--color-text-dark-gray);
+  box-shadow: 0 4px 10px var(--box-shadow-light-black);
+  transition: all 0.2s ease;
+  border: 1px solid var(--color-border-light-black);
+}
+
+.modal__close:hover {
+  background: var(--color-background-white);
+  transform: translateX(-50%) scale(1.1);
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
   }
 }
 
@@ -110,25 +192,25 @@
 }
 
 @media (min-width: 768px) {
-    .our-values__title {
+  .our-values__title {
     font-size: 45px;
   }
 }
 
 @media (min-width: 1024px) {
-    .our-values__title {
+  .our-values__title {
     font-size: 52px;
   }
 }
 
 @media (min-width: 768px) {
-    .our-values__item-title {
+  .our-values__item-title {
     font-size: 24px;
   }
 }
 
 @media (min-width: 1024px) {
-    .our-values__item-title {
+  .our-values__item-title {
     font-size: 26px;
   }
 }
@@ -145,7 +227,7 @@
   box-sizing: border-box;
 }
 
-.download__container > * {
+.download__container>* {
   max-width: 1200px;
   margin-left: 20px;
   margin-right: auto;
@@ -196,19 +278,19 @@
 }
 
 @media (min-width: 768px) {
-    .download__title {
+  .download__title {
     font-size: 45px;
   }
 }
 
 @media (min-width: 1024px) {
-    .download__title {
+  .download__title {
     font-size: 52px;
   }
 }
 
 @media (min-width: 1440px) {
-    .download__container > * {
+  .download__container>* {
     margin-left: 180px;
   }
 }

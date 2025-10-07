@@ -7,6 +7,19 @@
   <title>Home Decor</title>
   <link rel="shortcut icon" href="img/global/deco4you-icon.png" type="image/x-icon" />
   <link rel="stylesheet" href="css/index.css">
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
   <script src="https://unpkg.com/htmx.org@1.9.10"
     integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
     crossorigin="anonymous"></script>
@@ -18,17 +31,20 @@
     <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header-nav.partial.html"></section>
   </header>
   <!-- Start Feshchenko Bogdan -->
-  <main class="main">
-    <!-- Start Viktoria Sikorska -->
+    <!-- Start Dmytro Kurlov COMMENTED
+     <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.why-choose-us.partial.html"></section>
+    Dmytro Kurlov -->
     <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.history.partial.html"></section>
-    <!-- End Viktoria Sikorska -->
-
+    <!-- End Dmytro Kurlov -->
     <!-- Start Rezunenko Oleksandr  -->
     <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.about-us.partial.html"></section>
     <!-- End Rezunenko Oleksandr  -->
     <!-- Start Andrii Komiakov -->
     <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.types.partial.html"></section>
     <!-- End Andrii Komiakov -->
+    <!--Start Lozovyi Taras-->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.features.partial.html"></section>
+    <!--End Lozovyi Taras-->
     <!-- Start Roman Lashkevych -->
     <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.style-inspiration.partial.html">
     </section>
@@ -39,6 +55,13 @@
     <!-- Start Oleksandr Tsupko -->
     <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.our-team.partial.html"></section>
     <!-- End Oleksandr Tsupko -->
+        <!-- Start Vakulenko Veronika -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.featured-favorites.partial.html">
+    </section>
+    <!-- End Vakulenko Veronika -->
+     <!-- Start Yankovych Maksym -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.catalog.partial.html"></section>
+    <!-- End Yankovych Maksym -->
     <!-- Start Maria Radionova -->
     <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.quote.partial.html"></section>
     <!-- End Radionova Maria -->
@@ -55,23 +78,11 @@
     <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.call-to-action.partial.html"></section>
     <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.faq.partial.html"></section>
     <!-- End Nerush Illya -->
-    <!-- Start Krichfalushi Liana -->
+    <!-- Start Krichfalushi Liana COMMENTED
     <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.sale-now-on.partial.html"></section>
-    <!-- End Krichfalushi Liana -->
-    <!-- Start Vakulenko Veronika -->
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.featured-favorites.partial.html">
-    </section>
-    <!-- End Vakulenko Veronika -->
-    <!-- Start Yankovych Maksym -->
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.catalog.partial.html"></section>
-    <!-- End Yankovych Maksym -->
-    <!--Start Lozovyi Taras-->
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.features.partial.html"></section>
-    <!--End Lozovyi Taras-->
-    <!-- Start Yankovych Maksym -->
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.filters-modal.partial.html"></section>
-    <!-- End Yankovych Maksym -->
+     End Krichfalushi Liana -->
   </main>
   <footer class="footer"></footer>
+  <script src="js/index.js"></script>
 </body>
 </html>

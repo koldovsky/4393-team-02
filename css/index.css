@@ -9,5 +9,11 @@
 @import "index.featured-favorites.css";
 @import "index.style-inspiration.css";
 @import "index.types.css";
+@import "index.discount.css";
 @import "index.latest-news.css";
-@import "index.filters-modal.css";
+@import "index.features.css";
+@import "index.call-to-action.css";
+@import "index.faq.css";
+@import "index.why-choose-us.css";
+@import "index.quote.css";
+
