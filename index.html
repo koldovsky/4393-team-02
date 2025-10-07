@@ -84,5 +84,47 @@
   </main>
   <footer class="footer"></footer>
   <script src="js/index.js"></script>
+
+  <script>
+(function () {
+  
+  const modalTexts = ["hhh111", "hhh222", "hhh333", "hhh444"];
+
+  const section = document.getElementById("latest-news");
+  const buttons = section.querySelectorAll(".latest-news__link.button");
+  const backdrop = document.getElementById("lnModal");
+  const closeBtn = document.getElementById("lnModalClose");
+  const content = document.getElementById("lnModalContent");
+  let lastFocused = null;
+ 
+  buttons.forEach((btn, idx) => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault(); // 
+      lastFocused = e.currentTarget;
+      content.textContent = modalTexts[idx] || "";
+      backdrop.setAttribute("aria-hidden", "false");
+      closeBtn.focus();
+      document.addEventListener("keydown", onEsc);
+    });
+  });
+
+  function closeModal() {
+    backdrop.setAttribute("aria-hidden", "true");
+    document.removeEventListener("keydown", onEsc);
+    if (lastFocused) lastFocused.focus();
+  }
+
+  function onEsc(e) {
+    if (e.key === "Escape") closeModal();
+  }
+
+  closeBtn.addEventListener("click", closeModal);
+  
+  backdrop.addEventListener("click", (e) => {
+    if (e.target === backdrop) closeModal();
+  });
+})();
+</script>
+
 </body>
 </html>
