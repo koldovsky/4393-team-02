@@ -5,6 +5,7 @@ function init() {
   import("./index.style-inspiration.js");
   import("./gallery-modal.js");
   import("./latest-news.js");
+  import("./index.quote.js");
 }
 
 const totalPartials = document.querySelectorAll(
